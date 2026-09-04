@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calamity Technology Solutions Group — Data &amp; BI for Houston companies</title>
+<meta name="description" content="Data engineering, business intelligence, and honest AI readiness assessment for Houston-area companies from $10M to $250M. Fixed-fee data audit, $7,500.">
+<link rel="canonical" href="https://ctsg-htx.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ctsg-htx.com/">
+<meta property="og:title" content="Calamity Technology Solutions Group">
+<meta property="og:description" content="I make the data you already have good enough to run the business on — and I'll tell you honestly whether you're ready for AI before someone sells you some.">
+<meta property="og:site_name" content="CTSG">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Calamity Technology Solutions Group, LLC",
+  "alternateName": "CTSG",
+  "url": "https://ctsg-htx.com/",
+  "description": "Data engineering, business intelligence, and AI readiness assessment for mid-market Houston companies.",
+  "areaServed": { "@type": "City", "name": "Houston, Texas" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Sugar Land", "addressRegion": "TX", "addressCountry": "US" },
+  "founder": { "@type": "Person", "name": "Anthony Johnson" },
+  "email": "anthony@ctsg-htx.com",
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Data Audit",
+    "price": "7500",
+    "priceCurrency": "USD",
+    "description": "Two to three week fixed-fee assessment: data inventory, readiness scorecard, three priced opportunities, and one working proof-of-concept."
+  }
+}
+</script>
+
+<style>
+:root{
+  --ink:#12161c;
+  --ink-2:#39424f;
+  --ink-3:#69737f;
+  --line:#e2e0da;
+  --paper:#fbfaf7;
+  --paper-2:#f3f1ea;
+  --deep:#131a24;
+  --deep-2:#1d2531;
+  --accent:#9a4b23;
+  --accent-soft:#f0e2d8;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:400 17px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:500;line-height:1.15;letter-spacing:-.01em;margin:0}
+p{margin:0 0 1.1em}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.narrow{max-width:760px}
+
+/* ---------- header ---------- */
+.top{border-bottom:1px solid var(--line);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px;padding-bottom:20px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:11px;text-decoration:none}
+.mark{
+  font-family:Fraunces,Georgia,serif;font-size:19px;letter-spacing:.14em;
+  color:var(--paper);background:var(--deep);padding:7px 11px 6px;border-radius:3px;line-height:1;
+}
+.brand span{font-size:13.5px;color:var(--ink-3);letter-spacing:.02em}
+.top-contact{font-size:14.5px;color:var(--ink-2);display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.top-contact a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px}
+.top-contact a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---------- hero ---------- */
+.hero{padding:96px 0 76px;border-bottom:1px solid var(--line)}
+.eyebrow{
+  font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  font-weight:600;margin-bottom:26px;
+}
+.hero h1{font-size:clamp(34px,5.4vw,58px);max-width:16ch;margin-bottom:26px}
+.hero .lede{font-size:clamp(18px,2.2vw,21px);color:var(--ink-2);max-width:60ch;line-height:1.6}
+.hero .lede strong{color:var(--ink);font-weight:500}
+
+/* ---------- generic section ---------- */
+section{padding:76px 0}
+.sec-label{
+  font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:600;margin-bottom:20px;
+}
+h2{font-size:clamp(27px,3.6vw,38px);margin-bottom:26px;max-width:22ch}
+h3{font-size:20px;margin-bottom:9px}
+.big{font-size:19px;line-height:1.65}
+
+/* ---------- honest ---------- */
+.honest{background:var(--deep);color:#e8e5df;border-top:1px solid var(--deep-2)}
+.honest h2{color:#fff}
+.honest .sec-label{color:#8d9aab}
+.honest p{color:#c3c8d0}
+.honest strong{color:#fff;font-weight:500}
+.pull{
+  font-family:Fraunces,Georgia,serif;font-size:clamp(21px,2.8vw,27px);line-height:1.4;
+  color:#fff;border-left:2px solid var(--accent);padding-left:24px;margin:34px 0 0;max-width:52ch;
+}
+
+/* ---------- fit list ---------- */
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);margin-top:8px}
+.fit div{background:var(--paper);padding:26px 24px}
+.fit h3{font-family:Inter,sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;margin-bottom:7px}
+.fit p{font-size:15.5px;color:var(--ink-2);margin:0;line-height:1.6}
+.after-fit{margin-top:26px;color:var(--ink-3);font-size:16px}
+
+/* ---------- audit ---------- */
+.audit{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{counter-reset:s;margin:36px 0 0;padding:0;list-style:none}
+.steps li{
+  counter-increment:s;position:relative;padding:0 0 30px 58px;
+  border-left:1px solid var(--line);margin-left:15px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:6px}
+.steps li::before{
+  content:counter(s);position:absolute;left:-15px;top:-2px;width:30px;height:30px;border-radius:50%;
+  background:var(--deep);color:var(--paper);font-size:13px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;
+}
+.steps h3{margin-bottom:6px}
+.steps p{font-size:16px;color:var(--ink-2);margin:0;max-width:58ch}
+
+.price-box{
+  margin-top:44px;border:1px solid var(--ink);background:var(--paper);
+  padding:38px 34px;display:flex;gap:34px;align-items:flex-start;flex-wrap:wrap;
+}
+.price-fig{font-family:Fraunces,Georgia,serif;font-size:52px;line-height:1;letter-spacing:-.02em}
+.price-fig small{display:block;font-family:Inter,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:11px;font-weight:600}
+.price-copy{flex:1;min-width:260px}
+.price-copy p{margin:0 0 .8em;font-size:16.5px;color:var(--ink-2)}
+.price-copy p:last-child{margin:0}
+.price-copy b{color:var(--ink);font-weight:600}
+
+/* ---------- ladder ---------- */
+.ladder{width:100%;border-collapse:collapse;margin-top:10px;font-size:16px}
+.ladder th{
+  text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:600;padding:0 16px 13px 0;border-bottom:1px solid var(--line);
+}
+.ladder td{padding:20px 16px 20px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+.ladder td:first-child{color:var(--ink);font-weight:600;width:23%}
+.ladder td:last-child{white-space:nowrap;color:var(--ink);font-weight:600;text-align:right;padding-right:0}
+.note{margin-top:26px;color:var(--ink-3);font-size:16px;max-width:64ch}
+
+/* ---------- who ---------- */
+.who{background:var(--deep);color:#e8e5df}
+.who h2{color:#fff}
+.who .sec-label{color:#8d9aab}
+.who-grid{display:grid;grid-template-columns:200px 1fr;gap:46px;align-items:start}
+.portrait{
+  width:200px;height:240px;border-radius:2px;object-fit:cover;display:block;
+  background:var(--deep-2);border:1px solid #2b3441;
+}
+.portrait-ph{
+  width:200px;height:240px;border-radius:2px;background:var(--deep-2);border:1px dashed #3c4757;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:#67748a;font-size:12.5px;line-height:1.5;padding:16px;
+}
+.who p{color:#c3c8d0;max-width:56ch}
+.who strong{color:#fff;font-weight:500}
+.creds{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:15px;max-width:56ch}
+.creds li{padding-left:20px;position:relative;color:#c3c8d0;font-size:16.5px;line-height:1.6}
+.creds li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:1px;background:var(--accent)}
+.creds b{color:#fff;font-weight:500}
+
+/* ---------- not-for ---------- */
+.notfor ul{list-style:none;margin:0;padding:0;display:grid;gap:17px;max-width:62ch}
+.notfor li{padding-left:26px;position:relative;color:var(--ink-2);font-size:16.5px}
+.notfor li::before{content:"—";position:absolute;left:0;color:var(--ink-3)}
+.notfor b{color:var(--ink);font-weight:600}
+
+/* ---------- cta ---------- */
+.cta{background:var(--accent-soft);border-top:1px solid #e3d0c3;text-align:center}
+.cta h2{margin:0 auto 22px;max-width:20ch}
+.cta p{color:var(--ink-2);max-width:52ch;margin:0 auto 34px;font-size:18px}
+.btn{
+  display:inline-block;background:var(--deep);color:var(--paper);text-decoration:none;
+  padding:17px 34px;font-size:16px;font-weight:600;border-radius:2px;letter-spacing:.01em;
+}
+.btn:hover{background:#000}
+.cta-alt{margin-top:24px;font-size:16px;color:var(--ink-2)}
+.cta-alt a{color:var(--ink);text-decoration:none;border-bottom:1px solid #d3bfae;padding-bottom:1px}
+.cta-alt a:hover{color:var(--accent);border-color:var(--accent)}
+.slots{margin-top:30px;font-size:14.5px;color:var(--ink-3);font-style:italic}
+
+/* ---------- footer ---------- */
+footer{background:var(--deep);color:#79839a;padding:44px 0;font-size:14.5px}
+.foot{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+footer a{color:#c3c8d0;text-decoration:none}
+footer a:hover{color:#fff}
+
+@media(max-width:720px){
+  .hero{padding:64px 0 54px}
+  section{padding:58px 0}
+  .who-grid{grid-template-columns:1fr;gap:30px}
+  .portrait,.portrait-ph{width:100%;max-width:230px;height:270px}
+  .price-box{padding:30px 24px;gap:24px}
+  .ladder td:first-child{width:auto}
+  .ladder,.ladder tbody,.ladder tr,.ladder td{display:block;width:100%}
+  .ladder thead{display:none}
+  .ladder tr{padding:20px 0;border-bottom:1px solid var(--line)}
+  .ladder td{border:0;padding:0 0 7px}
+  .ladder td:last-child{text-align:left;padding:6px 0 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="mark">CTSG</span>
+      <span>Calamity Technology Solutions Group</span>
+    </a>
+    <div class="top-contact">
+      <span>Sugar Land, Texas</span>
+      <a href="mailto:anthony@ctsg-htx.com">anthony@ctsg-htx.com</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap narrow">
+    <div class="eyebrow">Data &amp; business intelligence · Greater Houston</div>
+    <h1>I make the data you already have good enough to run the business on.</h1>
+    <p class="lede">And I'll tell you honestly whether you're ready for AI <strong>before</strong> someone sells you some.</p>
+  </div>
+</div>
+
+<section class="honest">
+  <div class="wrap narrow">
+    <div class="sec-label">The honest version</div>
+    <h2>Somewhere in your company there's a spreadsheet the business actually runs on.</h2>
+    <p>One person maintains it. It pulls from three systems that don't talk to each other, it gets rebuilt by hand every month, and if that person left tomorrow you'd have a problem nobody wants to say out loud.</p>
+    <p>Meanwhile your board, your bank, or your best customer has started asking what you're doing with AI.</p>
+    <p>Here's what nobody selling you software will say: <strong>you can't automate a mess. You can only automate a process.</strong> Every AI project that fails in a mid-market company fails for the same boring reason — the data underneath it disagreed with itself, and nobody checked first.</p>
+    <div class="pull">I check first. Then I fix it. Then, if it makes sense, we automate it.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <div class="sec-label">Who this is for</div>
+      <h2>Not an industry. A situation.</h2>
+      <p class="big" style="color:var(--ink-2);margin-bottom:34px">You'll recognize yourself in most of these.</p>
+    </div>
+    <div class="fit">
+      <div>
+        <h3>$10M–$250M in revenue</h3>
+        <p>No full-time data person. IT keeps the lights on, but nobody owns the numbers.</p>
+      </div>
+      <div>
+        <h3>Three or more systems that don't talk</h3>
+        <p>An ERP or field system, a CRM, accounting, payroll, and a pile of vendor portals.</p>
+      </div>
+      <div>
+        <h3>Grown by acquisition, or just grown fast</h3>
+        <p>Every location or division ended up doing it slightly differently.</p>
+      </div>
+      <div>
+        <h3>Somebody senior lives in Excel</h3>
+        <p>Days a month spent producing a report that should take four minutes.</p>
+      </div>
+      <div>
+        <h3>You've been pitched AI</h3>
+        <p>And you genuinely can't tell whether it would work on your business or not.</p>
+      </div>
+      <div>
+        <h3>You're in the Houston area</h3>
+        <p>I'll be in your office, not on a status call from three time zones away.</p>
+      </div>
+    </div>
+    <p class="after-fit">Manufacturers, distributors, contractors, energy services, multi-location operators, professional services firms. The industry changes. The problem doesn't.</p>
+  </div>
+</section>
+
+<section class="audit">
+  <div class="wrap narrow">
+    <div class="sec-label">Start here</div>
+    <h2>The Data Audit</h2>
+    <p class="big" style="color:var(--ink-2)">Two to three weeks. Deliberately small, deliberately cheap — because it's how we both find out whether we should work together on anything bigger.</p>
+
+    <ol class="steps">
+      <li>
+        <h3>A map of your data — one page</h3>
+        <p>Every system you run, what's in it, how it connects, and where the same number lives in three places with three different values. Most owners have never seen this drawn. It's usually the most uncomfortable and most useful page in the engagement.</p>
+      </li>
+      <li>
+        <h3>A Data Readiness Score — 0 to 100</h3>
+        <p>Eight dimensions: completeness, duplicate and matching problems, timeliness, where numbers come from, who can see what, whether "revenue" means the same thing in two departments, how well systems integrate, and what's documented. Standardized — so your score means something against other companies your size, not just against your own gut.</p>
+      </li>
+      <li>
+        <h3>Three things worth doing, ranked and priced</h3>
+        <p>Not a wish list. Each one scored on value against feasibility, with a real effort estimate and a real dollar figure. At least one automation or AI play. At least one piece of basic reporting you should already have and don't.</p>
+      </li>
+      <li>
+        <h3>One working thing, built on your real data</h3>
+        <p>Not a mockup. Something that runs: a reconciliation that finds actual discrepancies in your actual numbers, an automated version of that monthly spreadsheet, or a tool that pulls data out of the PDFs your team is currently retyping. You keep it whether or not we work together again.</p>
+      </li>
+      <li>
+        <h3>A 90-minute readout</h3>
+        <p>The map, the score, the roadmap — with prices attached, so you can decide what happens next without sitting through another sales pitch.</p>
+      </li>
+    </ol>
+
+    <div class="price-box">
+      <div class="price-fig">$7,500<small>Fixed fee</small></div>
+      <div class="price-copy">
+        <p>Not hourly. Not a range. Not plus expenses.</p>
+        <p><b>And if you sit through the readout and don't think it was worth it, don't pay.</b></p>
+        <p>I can offer that because it hasn't happened. If it does, I'd rather find out than argue about an invoice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <div class="sec-label">What happens after</div>
+    <h2>Most audits turn into one of these.</h2>
+    <p class="big" style="color:var(--ink-2);margin-bottom:32px">All fixed-fee. You're buying an outcome, not my hours.</p>
+
+    <table class="ladder">
+      <thead>
+        <tr><th>Engagement</th><th>What it is</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Embedded build</td>
+          <td>I work inside your business for 3–6 weeks and ship the highest-value item from the audit.</td>
+          <td>$18–35k</td>
+        </tr>
+        <tr>
+          <td>Single fix</td>
+          <td>One specific thing, built and handed over. Two to four weeks.</td>
+          <td>$8–15k</td>
+        </tr>
+        <tr>
+          <td>Ongoing</td>
+          <td>One to two days a week, on site. I own your data function the way a full-time hire would, without the hire.</td>
+          <td>$6–9k/mo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">For context: a competent data engineer in Houston costs $130–170k plus benefits, plus six months to find, plus the risk they leave. This is the version where somebody senior shows up next week.</p>
+  </div>
+</section>
+
+<section class="who">
+  <div class="wrap">
+    <div class="sec-label">Who you'd actually be working with</div>
+    <div class="who-grid">
+      <!-- Swap this placeholder for: <img class="portrait" src="anthony.jpg" alt="Anthony Johnson"> -->
+      <div class="portrait-ph">Photo goes here<br>—<br>200 × 240</div>
+      <div>
+        <h2 style="margin-bottom:20px">Anthony Johnson</h2>
+        <p><strong>One person. The one who does the work, in the room, every time.</strong> No account manager, no bench being billed to you, no junior you've never met showing up on week two.</p>
+        <ul class="creds">
+          <li><b>Five years end to end</b> — data engineering through data science. The plumbing, the reporting, and the modeling on top. Most firms sell you one of those three and subcontract the rest.</li>
+          <li><b>Regulated, multi-system, adversarially messy data.</b> That's the hardest kind there is. Everything after it is easier.</li>
+          <li><b>Deep in the Microsoft stack</b> — Azure, Fabric, Power BI, SQL — alongside Python and modern analytical tooling. Most boutique data shops chase venture-backed startups and don't speak to a CFO who lives in Excel and already pays for Microsoft 365.</li>
+          <li><b>I know enough about AI to tell you no.</b> That's rarer, and worth more to you right now, than knowing enough to say yes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="notfor">
+  <div class="wrap narrow">
+    <div class="sec-label">Who this isn't for</div>
+    <h2>I'd rather tell you on the first call.</h2>
+    <ul>
+      <li><b>Companies with a working internal data team.</b> You don't need me — you need to listen to them.</li>
+      <li><b>Anyone who wants a strategy document.</b> This produces a map, a score, three priced options, and something that runs.</li>
+      <li><b>Anyone who already signed the AI contract.</b> Call me in a year.</li>
+      <li><b>Anyone shopping hourly rates.</b> I quote fixed fees, because being fast should benefit both of us.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap narrow">
+    <h2>A 30-minute call.</h2>
+    <p>I'll ask what systems you run and where the manual work is. If the audit isn't the right thing for you, I'll say so on that call, and it costs you nothing.</p>
+    <a class="btn" href="mailto:anthony@ctsg-htx.com?subject=Data%20audit%20—%20initial%20conversation">Start a conversation</a>
+    <p class="cta-alt">Or call directly — <a href="tel:+1PHONE">[ PHONE ]</a></p>
+    <p class="slots">I take two audits at a time. That's a real constraint, not a closing line.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y">2026</span> Calamity Technology Solutions Group, LLC · Sugar Land, Texas</div>
+    <div><a href="mailto:anthony@ctsg-htx.com">anthony@ctsg-htx.com</a></div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
