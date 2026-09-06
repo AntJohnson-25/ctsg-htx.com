@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services &mdash; Data, BI &amp; AI for Houston companies | CTSG</title>
+<meta name="description" content="Data platform engineering, Power BI, AI implementation and custom software for companies in Houston, Sugar Land, Stafford, Missouri City and Fort Bend County. Fixed-fee engagements, starting with a $7,500 data audit.">
+<link rel="canonical" href="https://ctsg-htx.com/services.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ctsg-htx.com/services.html">
+<meta property="og:title" content="Services &mdash; Calamity Technology Solutions Group">
+<meta property="og:description" content="What the engagements after the audit actually build: data platforms, reporting, automation, and software for Greater Houston companies.">
+<meta property="og:site_name" content="CTSG">
+<meta property="og:image" content="https://ctsg-htx.com/ctsg-logo.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%23131a24'/><text x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23fbfaf7' text-anchor='middle'>C</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- FAQPage only. The ProfessionalService entity is declared once, on the home
+     page, so the two pages do not compete to represent the same business. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my company actually ready for AI, or is that overkill at our size?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most mid-market companies are ready for a small piece of it, not an overhaul. Readiness comes down to whether the data underneath is consistent enough to trust, and whether you have one repeatable, time-consuming process worth automating first. That is exactly what the data audit measures, on eight dimensions, before anyone spends money on a build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much time does automation actually save?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends entirely on the process. The number that matters is how many hours a month someone senior currently spends rebuilding a report or re-keying data by hand. That figure gets measured during the audit and stated in hours, so the payback is arithmetic rather than a promise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will this increase revenue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sometimes, and I will not quote you a percentage before I have seen your data. What the audit guarantees is narrower and more honest: a map of your systems, a readiness score, three opportunities priced against effort, and one working thing built on your real numbers. Most of the value in the first engagement is recovered time and decisions that stop being guesses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with companies outside Houston?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The work is built around being in the room, so engagements are focused on Houston, Sugar Land, Stafford, Missouri City, Katy, Pearland, The Woodlands and the rest of Fort Bend and Harris County. Somewhere I can drive to on a Tuesday is somewhere I can help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are engagements priced?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fixed fee, always. The data audit is $7,500. After it, an embedded build runs $18,000 to $35,000, a single fix runs $8,000 to $15,000, and ongoing work at one to two days a week runs $6,000 to $9,000 a month. No hourly rates, because being fast should benefit both of us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know whether I need a one-off build or ongoing help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the audit surfaces one clearly defined thing worth fixing, that is a single fix or an embedded build and it ends when the thing works. If it surfaces a data function nobody owns, ongoing is the honest answer, because a one-off build handed to a company with no one to maintain it decays within a year. The readout tells you which situation you are in."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#12161c;
+  --ink-2:#39424f;
+  --ink-3:#69737f;
+  --line:#e2e0da;
+  --paper:#fbfaf7;
+  --paper-2:#f3f1ea;
+  --deep:#131a24;
+  --deep-2:#1d2531;
+  --accent:#9a4b23;
+  --accent-soft:#f0e2d8;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:400 17px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:500;line-height:1.15;letter-spacing:-.01em;margin:0}
+p{margin:0 0 1.1em}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.narrow{max-width:760px}
+
+/* ---------- header ---------- */
+.top{border-bottom:1px solid var(--line);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px;padding-bottom:20px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:11px;text-decoration:none}
+.brand img{height:34px;width:auto;display:block}
+.brand span{font-size:13.5px;color:var(--ink-3);letter-spacing:.02em}
+.top-contact{font-size:14.5px;color:var(--ink-2);display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.top-contact a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px}
+.top-contact a:hover{border-color:var(--accent);color:var(--accent)}
+.top-contact a.is-here{border-color:var(--accent);color:var(--accent)}
+
+/* ---------- header contact popover ---------- */
+.nav-contact-item{position:relative}
+.nav-contact-toggle{
+  font:inherit;color:var(--ink-2);background:none;border:0;border-bottom:1px solid var(--line);
+  padding:0 0 1px;cursor:pointer;
+}
+.nav-contact-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.nav-contact-panel{
+  position:absolute;right:0;top:calc(100% + 14px);z-index:20;width:290px;
+  background:var(--paper);border:1px solid var(--ink);padding:22px 20px;
+  box-shadow:0 14px 34px rgba(19,26,36,.13);
+}
+.nav-contact-panel p{font-size:14.5px;color:var(--ink-2);margin:0 0 14px;line-height:1.55}
+.nav-contact-panel input{margin-bottom:9px}
+.nav-contact-panel button{width:100%}
+
+/* ---------- forms ---------- */
+input,textarea{
+  font:400 15.5px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:2px;
+  background:var(--paper);color:var(--ink);
+}
+input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+textarea{resize:vertical;min-height:96px}
+button.btn{font:600 16px/1 Inter,sans-serif;border:0;cursor:pointer}
+.form-status{font-size:15px;margin:14px 0 0;min-height:1.2em}
+.form-status.is-error{color:#9a2323}
+.form-status.is-ok{color:var(--accent)}
+.nav-contact-status{font-size:14px;margin:10px 0 0}
+.nav-contact-status.is-error{color:#9a2323}
+.nav-contact-status.is-ok{color:var(--accent)}
+.visually-hidden{
+  position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* ---------- hero ---------- */
+.hero{padding:82px 0 66px;border-bottom:1px solid var(--line)}
+.eyebrow{
+  font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  font-weight:600;margin-bottom:26px;
+}
+.hero h1{font-size:clamp(32px,5vw,52px);max-width:17ch;margin-bottom:26px}
+.hero .lede{font-size:clamp(18px,2.2vw,21px);color:var(--ink-2);max-width:60ch;line-height:1.6}
+.hero .lede strong{color:var(--ink);font-weight:500}
+
+/* ---------- generic section ---------- */
+section{padding:76px 0}
+.sec-label{
+  font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:600;margin-bottom:20px;
+}
+h2{font-size:clamp(27px,3.6vw,38px);margin-bottom:26px;max-width:22ch}
+h3{font-size:20px;margin-bottom:9px}
+.big{font-size:19px;line-height:1.65}
+
+/* ---------- service cards ---------- */
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);margin-top:8px}
+.fit div{background:var(--paper);padding:26px 24px}
+.fit h3{font-family:Inter,sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;margin-bottom:7px}
+.fit p{font-size:15.5px;color:var(--ink-2);margin:0;line-height:1.6}
+.after-fit{margin-top:26px;color:var(--ink-3);font-size:16px;max-width:70ch}
+.after-fit a{color:var(--ink-2)}
+.after-fit a:hover{color:var(--accent)}
+
+/* ---------- process ---------- */
+.process{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{counter-reset:s;margin:36px 0 0;padding:0;list-style:none}
+.steps li{
+  counter-increment:s;position:relative;padding:0 0 30px 58px;
+  border-left:1px solid var(--line);margin-left:15px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:6px}
+.steps li::before{
+  content:counter(s);position:absolute;left:-15px;top:-2px;width:30px;height:30px;border-radius:50%;
+  background:var(--deep);color:var(--paper);font-size:13px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;
+}
+.steps h3{margin-bottom:6px}
+.steps p{font-size:16px;color:var(--ink-2);margin:0;max-width:58ch}
+
+/* ---------- ladder ---------- */
+.ladder{width:100%;border-collapse:collapse;margin-top:10px;font-size:16px}
+.ladder th{
+  text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:600;padding:0 16px 13px 0;border-bottom:1px solid var(--line);
+}
+.ladder td{padding:20px 16px 20px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+.ladder td:first-child{color:var(--ink);font-weight:600;width:23%}
+.ladder td:last-child{white-space:nowrap;color:var(--ink);font-weight:600;text-align:right;padding-right:0}
+.note{margin-top:26px;color:var(--ink-3);font-size:16px;max-width:64ch}
+
+/* ---------- area served ---------- */
+.area{background:var(--deep);color:#e8e5df}
+.area h2{color:#fff}
+.area .sec-label{color:#8d9aab}
+.area p{color:#c3c8d0;max-width:60ch}
+.area strong{color:#fff;font-weight:500}
+
+/* ---------- faq ---------- */
+.faq-list{border-top:1px solid var(--line);margin-top:8px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{
+  cursor:pointer;list-style:none;padding:23px 40px 23px 0;position:relative;
+  font-weight:600;font-size:17px;color:var(--ink);
+}
+.faq-item summary::-webkit-details-marker{display:none}
+/* Rotating the plus rather than swapping glyphs keeps the row from reflowing. */
+.faq-item summary::after{
+  content:"+";position:absolute;right:6px;top:21px;font-size:21px;font-weight:400;
+  color:var(--ink-3);transition:transform .16s ease;
+}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item summary:hover{color:var(--accent)}
+.faq-item p{padding:0 40px 24px 0;margin:0;color:var(--ink-2);font-size:16.5px;max-width:70ch}
+
+/* ---------- cta ---------- */
+.cta{background:var(--accent-soft);border-top:1px solid #e3d0c3;text-align:center}
+.cta h2{margin:0 auto 22px;max-width:20ch}
+.cta p{color:var(--ink-2);max-width:52ch;margin:0 auto 34px;font-size:18px}
+.btn{
+  display:inline-block;background:var(--deep);color:var(--paper);text-decoration:none;
+  padding:17px 34px;font-size:16px;font-weight:600;border-radius:2px;letter-spacing:.01em;
+}
+.btn:hover{background:#000}
+.slots{margin-top:30px;font-size:14.5px;color:var(--ink-3);font-style:italic}
+.cta-form{max-width:480px;margin:0 auto;text-align:left}
+.cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.cta-form textarea{margin-bottom:16px}
+.cta-form button{width:100%}
+@media(max-width:560px){.cta-form .row{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+footer{background:var(--deep);color:#79839a;padding:44px 0;font-size:14.5px}
+.foot{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
+footer a{color:#c3c8d0;text-decoration:none}
+footer a:hover{color:#fff}
+
+@media(max-width:720px){
+  .hero{padding:58px 0 48px}
+  section{padding:58px 0}
+  .ladder td:first-child{width:auto}
+  .ladder,.ladder tbody,.ladder tr,.ladder td{display:block;width:100%}
+  .ladder thead{display:none}
+  .ladder tr{padding:20px 0;border-bottom:1px solid var(--line)}
+  .ladder td{border:0;padding:0 0 7px}
+  .ladder td:last-child{text-align:left;padding:6px 0 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="ctsg-logo.png" alt="CTSG">
+      <span>Calamity Technology Solutions Group</span>
+    </a>
+    <div class="top-contact">
+      <a href="/">Home</a>
+      <a href="services.html" class="is-here">Services</a>
+      <span>Sugar Land, Texas</span>
+
+      <div class="nav-contact-item">
+        <button type="button" class="nav-contact-toggle" aria-expanded="false" aria-controls="nav-contact-panel">Contact</button>
+        <div class="nav-contact-panel" id="nav-contact-panel" hidden>
+          <p>Leave an address and I&rsquo;ll get back to you.</p>
+          <form novalidate>
+            <label class="visually-hidden" for="nav-contact-name">Name</label>
+            <input id="nav-contact-name" type="text" autocomplete="name" maxlength="120" placeholder="Name (optional)">
+            <label class="visually-hidden" for="nav-contact-email">Email</label>
+            <input id="nav-contact-email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required>
+            <button type="submit" class="btn">Send</button>
+          </form>
+          <p class="nav-contact-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap narrow">
+    <div class="eyebrow">Services &middot; Greater Houston</div>
+    <h1>What gets built once we know what&rsquo;s actually broken.</h1>
+    <p class="lede">Every engagement starts with <strong>the $7,500 data audit</strong>. This page is what comes after it &mdash; the work the audit points at, and roughly what it costs.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <div class="sec-label">Capabilities</div>
+      <h2>Five things, done end to end.</h2>
+      <p class="big" style="color:var(--ink-2);margin-bottom:34px">Not a menu to shop from. These are the disciplines an engagement draws on, usually two or three at once, on whichever problem the audit ranked first.</p>
+    </div>
+    <div class="fit">
+      <div>
+        <h3>Data platform engineering</h3>
+        <p>Cloud data platforms on Azure Data Factory and Synapse: ingestion, transformation, and reporting pipelines, schema-drift handling, and T-SQL performance tuning on systems that already carry your business.</p>
+      </div>
+      <div>
+        <h3>Business intelligence</h3>
+        <p>Power BI dashboards and reporting built on the data you already have &mdash; so leadership stops guessing and starts deciding on numbers that update themselves.</p>
+      </div>
+      <div>
+        <h3>AI implementation</h3>
+        <p>LLM-powered workflows, agentic systems, and custom tooling on Copilot Studio, Azure AI Foundry, and n8n that plug into your existing systems. Only after the data underneath will support it.</p>
+      </div>
+      <div>
+        <h3>Custom software</h3>
+        <p>Deterministic, high-stakes applications engineered for reliability and precise operational control &mdash; where a wrong answer is not an acceptable outcome.</p>
+      </div>
+      <div>
+        <h3>Integration and reconciliation</h3>
+        <p>Getting the ERP, the CRM, accounting, payroll, and the pile of vendor portals to agree on a customer, a part number, and a dollar. Usually the least glamorous item in the audit and the one worth the most.</p>
+      </div>
+    </div>
+    <p class="after-fit">I also build fast, search-optimised websites for local businesses &mdash; a smaller line of work than the above, but a real one. <a href="https://www.seniorsecured.org" target="_blank" rel="noopener">See a site I built &rarr;</a></p>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap narrow">
+    <div class="sec-label">How engagements run</div>
+    <h2>Embedded, hands-on, and validated against your real data before full build-out.</h2>
+
+    <ol class="steps">
+      <li>
+        <h3>Scope</h3>
+        <p>Requirements gathered directly from the people who use the thing, with technical trade-offs explained in plain business language rather than deferred to a document nobody reads.</p>
+      </li>
+      <li>
+        <h3>Prototype</h3>
+        <p>A rapid proof of concept built against your actual data and workflows, to establish feasibility before either of us commits to a full build.</p>
+      </li>
+      <li>
+        <h3>Build</h3>
+        <p>Iterating in real time on live feedback rather than waiting on handoff cycles. I&rsquo;m in your office for this part, not on a status call.</p>
+      </li>
+      <li>
+        <h3>Prove it</h3>
+        <p>Outcomes quantified and presented to leadership &mdash; hours recovered, reconciliation breaks eliminated, decisions that used to take a week. Measured against the baseline the audit captured, so the comparison is real.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <div class="sec-label">What it costs</div>
+    <h2>Fixed fee, every time.</h2>
+    <p class="big" style="color:var(--ink-2);margin-bottom:32px">You&rsquo;re buying an outcome, not my hours.</p>
+
+    <table class="ladder">
+      <thead>
+        <tr><th>Engagement</th><th>What it is</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data audit</td>
+          <td>Where everyone starts. Two to three weeks: a map of your data, a readiness score, three priced opportunities, and one working thing you keep.</td>
+          <td>$7,500</td>
+        </tr>
+        <tr>
+          <td>Embedded build</td>
+          <td>I work inside your business for 3&ndash;6 weeks and ship the highest-value item from the audit.</td>
+          <td>$18&ndash;35k</td>
+        </tr>
+        <tr>
+          <td>Single fix</td>
+          <td>One specific thing, built and handed over. Two to four weeks.</td>
+          <td>$8&ndash;15k</td>
+        </tr>
+        <tr>
+          <td>Ongoing</td>
+          <td>One to two days a week, on site. I own your data function the way a full-time hire would, without the hire.</td>
+          <td>$6&ndash;9k/mo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">For context: a competent data engineer in Houston costs $130&ndash;170k plus benefits, plus six months to find, plus the risk they leave. This is the version where somebody senior shows up next week.</p>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap narrow">
+    <div class="sec-label">Where I work</div>
+    <h2>Close enough to be in the room.</h2>
+    <p>The whole method depends on being on site &mdash; sitting with the person who maintains the spreadsheet, watching the process actually happen instead of reading a description of it. That puts a real boundary on the map.</p>
+    <p><strong>Houston, Sugar Land, Stafford, Missouri City, Katy, Pearland, Cypress, Spring, The Woodlands, Conroe</strong>, and the rest of Fort Bend and Harris County. Somewhere I can drive to on a Tuesday is somewhere I can help.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <div class="sec-label">Questions</div>
+    <h2>What owners ask before starting.</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is my company actually ready for AI, or is that overkill at our size?</summary>
+        <p>Most mid-market companies are ready for a small piece of it, not an overhaul. Readiness comes down to two things: whether the data underneath is consistent enough to trust, and whether you have one repeatable, time-consuming process worth automating first. That is exactly what the audit measures, across eight dimensions, before anyone spends money on a build.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much time does automation actually save?</summary>
+        <p>It depends entirely on the process, and anyone who quotes you a number before seeing it is guessing. The figure that matters is how many hours a month someone senior currently spends rebuilding a report or re-keying data by hand. That gets measured during the audit and stated in hours, so the payback is arithmetic rather than a promise.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will this increase revenue?</summary>
+        <p>Sometimes &mdash; and I won&rsquo;t quote you a percentage before I&rsquo;ve seen your data. What the audit guarantees is narrower and more honest: a map of your systems, a readiness score, three opportunities priced against effort, and one working thing built on your real numbers. Most of the value in a first engagement is recovered time and decisions that stop being guesses. Revenue tends to follow that, but it follows it second.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with companies outside Houston?</summary>
+        <p>Rarely, and not by preference. The work is built around being in the room, so engagements stay inside Houston, Sugar Land, Stafford, Missouri City, Katy, Pearland, The Woodlands, and the rest of Fort Bend and Harris County. If you&rsquo;re further out and the problem is genuinely the right shape, ask &mdash; but the honest default is no.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How are engagements priced?</summary>
+        <p>Fixed fee, always, at the figures in the table above. No hourly rates, because being fast should benefit both of us rather than costing me money. Nothing is quoted as a range once we&rsquo;ve scoped it &mdash; the ranges above collapse to a single number in the proposal.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I know whether I need a one-off build or ongoing help?</summary>
+        <p>If the audit surfaces one clearly defined thing worth fixing, that&rsquo;s a single fix or an embedded build, and it ends when the thing works. If it surfaces a data function nobody owns, ongoing is the honest answer &mdash; a one-off build handed to a company with nobody to maintain it decays inside a year. The readout tells you which situation you&rsquo;re actually in, and I&rsquo;ll say so plainly even when the smaller answer is the right one.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap narrow">
+    <h2>A 30-minute call.</h2>
+    <p>I&rsquo;ll ask what systems you run and where the manual work is. If the audit isn&rsquo;t the right thing for you, I&rsquo;ll say so on that call, and it costs you nothing.</p>
+
+    <form class="cta-form" id="inquiry-form" data-source="ctsg-htx-services" novalidate>
+      <div class="row">
+        <div>
+          <label class="visually-hidden" for="inquiry-name">Name</label>
+          <input id="inquiry-name" type="text" autocomplete="name" maxlength="120" placeholder="Name" required>
+        </div>
+        <div>
+          <label class="visually-hidden" for="inquiry-company">Company</label>
+          <input id="inquiry-company" type="text" autocomplete="organization" maxlength="160" placeholder="Company (optional)">
+        </div>
+      </div>
+      <div class="row" style="grid-template-columns:1fr">
+        <div>
+          <label class="visually-hidden" for="inquiry-email">Email</label>
+          <input id="inquiry-email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required>
+        </div>
+      </div>
+      <label class="visually-hidden" for="inquiry-message">What you&rsquo;re dealing with</label>
+      <textarea id="inquiry-message" maxlength="4000" placeholder="What systems you run, and where the manual work is. Optional &mdash; a name and an address is enough."></textarea>
+
+      <div class="visually-hidden" aria-hidden="true">
+        <label for="inquiry-website">Leave this field empty</label>
+        <input id="inquiry-website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" class="btn">Start a conversation</button>
+    </form>
+    <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
+
+    <p class="slots">I take two audits at a time. That&rsquo;s a real constraint, not a closing line.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>&copy; <span id="y">2026</span> Calamity Technology Solutions Group, LLC &middot; Sugar Land, Texas</div>
+    <div><a href="/">Home</a> &middot; <a href="#contact">Contact</a></div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script src="ctsg-data.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

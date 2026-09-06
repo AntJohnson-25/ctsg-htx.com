@@ -1,0 +1,6 @@
+# The Pages workflow publishes the whole repo root (path: '.'), so anything
+# committed here is served at ctsg-htx.com. Keep operational files out.
+supabase-schema.sql
+
+# Claude Code local state
+.claude/settings.local.json
