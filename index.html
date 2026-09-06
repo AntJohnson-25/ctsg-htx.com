@@ -214,11 +214,6 @@ h3{font-size:20px;margin-bottom:9px}
   width:200px;height:240px;border-radius:2px;object-fit:cover;display:block;
   background:var(--deep-2);border:1px solid #2b3441;
 }
-.portrait-ph{
-  width:200px;height:240px;border-radius:2px;background:var(--deep-2);border:1px dashed #3c4757;
-  display:flex;align-items:center;justify-content:center;text-align:center;
-  color:#67748a;font-size:12.5px;line-height:1.5;padding:16px;
-}
 .who p{color:#c3c8d0;max-width:56ch}
 .who strong{color:#fff;font-weight:500}
 .creds{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:15px;max-width:56ch}
@@ -264,7 +259,7 @@ footer a:hover{color:#fff}
   .hero{padding:64px 0 54px}
   section{padding:58px 0}
   .who-grid{grid-template-columns:1fr;gap:30px}
-  .portrait,.portrait-ph{width:100%;max-width:230px;height:270px}
+  .portrait{width:100%;max-width:230px;height:270px}
   .price-box{padding:30px 24px;gap:24px}
   .ladder td:first-child{width:auto}
   .ladder,.ladder tbody,.ladder tr,.ladder td{display:block;width:100%}
@@ -445,8 +440,11 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="sec-label">Who you'd actually be working with</div>
     <div class="who-grid">
-      <!-- Swap this placeholder for: <img class="portrait" src="anthony.jpg" alt="Anthony Johnson"> -->
-      <div class="portrait-ph">Photo goes here<br>—<br>200 × 240</div>
+      <!-- Pulled from the final frame of Newdigital.mp4 on anthonyjctsg.com:
+           that clip morphs an illustration into the real photograph, and this
+           is where it settles. Served at 3x the display size so it holds up on
+           a retina screen. -->
+      <img class="portrait" src="anthony.jpg" alt="Anthony Johnson" width="200" height="240">
       <div>
         <h2 style="margin-bottom:20px">Anthony Johnson</h2>
         <p><strong>One person. The one who does the work, in the room, every time.</strong> No account manager, no bench being billed to you, no junior you've never met showing up on week two.</p>
