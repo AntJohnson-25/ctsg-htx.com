@@ -3,22 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CTSG - Customer data and campaigns for Houston home service companies</title>
-<meta name="description" content="Data engineering and follow-up campaigns for Houston-area HVAC, plumbing, electrical, roofing, pest, pool, and landscaping companies. A database you own, monthly campaigns, results measured against a holdout group.">
+<!-- Title leads with what an owner types into Google, brand last. Kept under
+     about 60 characters so it is not cut off in results. -->
+<title>HVAC, Plumbing and Home Service Marketing in Houston | CTSG</title>
+<meta name="description" content="Follow-up campaigns and customer data for Houston HVAC, plumbing, electrical and roofing companies doing $1M-$10M. Results measured against a holdout.">
 <link rel="canonical" href="https://ctsg-htx.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0d1520">
 
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://ctsg-htx.com/">
-<meta property="og:title" content="Calamity Technology Solutions Group">
-<meta property="og:description" content="Customer data and follow-up campaigns for Houston home service companies, measured against a holdout group.">
 <meta property="og:site_name" content="CTSG">
-<!-- Interim card image: the logo on transparency, which some platforms will
-     composite onto white. Replace with a proper 1200x630 card when one exists. -->
-<meta property="og:image" content="https://ctsg-htx.com/ctsg-logo.png">
+<meta property="og:title" content="Customer data and campaigns for Houston home service companies">
+<meta property="og:description" content="For HVAC, plumbing, electrical, roofing, pest, pool, and landscaping companies doing $1M to $10M a year. Campaigns on the customers you already have, measured against a holdout group.">
+<meta property="og:image" content="https://ctsg-htx.com/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CTSG: for Houston home service companies doing $1M to $10M a year.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Customer data and campaigns for Houston home service companies">
+<meta name="twitter:description" content="Campaigns on the customers you already have, measured against a holdout group.">
+<meta name="twitter:image" content="https://ctsg-htx.com/og-card.png">
 
-<!-- Inline SVG favicon rather than a generated .ico: it stays sharp at every
-     size and costs no extra request. -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230d1520'/><text x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23ffffff' text-anchor='middle'>C</text></svg>">
+<!-- The CTSG logo on a white tile, as real files rather than a data: URI:
+     Google only shows a site icon in results when it can crawl one, and it
+     wants a multiple of 48px. White keeps the black mark visible on dark tabs. -->
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,29 +41,95 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Calamity Technology Solutions Group, LLC",
-  "alternateName": "CTSG",
-  "url": "https://ctsg-htx.com/",
-  "description": "Customer data engineering and follow-up campaigns for Houston-area home service companies, measured against a holdout group.",
-  "areaServed": [
-    { "@type": "AdministrativeArea", "name": "Harris County, Texas" },
-    { "@type": "AdministrativeArea", "name": "Fort Bend County, Texas" }
-  ],
-  "address": { "@type": "PostalAddress", "addressLocality": "Sugar Land", "addressRegion": "TX", "addressCountry": "US" },
-  "founder": { "@type": "Person", "name": "Anthony Johnson" },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "name": "Setup",
-      "description": "Field software and QuickBooks connected into one database the client owns.",
-      "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2500", "maxPrice": "3500", "priceCurrency": "USD" }
+      "@type": "ProfessionalService",
+      "@id": "https://ctsg-htx.com/#business",
+      "name": "Calamity Technology Solutions Group, LLC",
+      "alternateName": "CTSG",
+      "url": "https://ctsg-htx.com/",
+      "logo": "https://ctsg-htx.com/ctsg-logo.png",
+      "image": "https://ctsg-htx.com/og-card.png",
+      "description": "Customer data and follow-up campaigns for Houston-area HVAC, plumbing, electrical, roofing, pest control, pool, and landscaping companies doing $1M to $10M a year, with results measured against a holdout group.",
+      "priceRange": "$$",
+      "address": { "@type": "PostalAddress", "addressLocality": "Sugar Land", "addressRegion": "TX", "addressCountry": "US" },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Harris County, Texas" },
+        { "@type": "AdministrativeArea", "name": "Fort Bend County, Texas" },
+        { "@type": "City", "name": "Houston, Texas" },
+        { "@type": "City", "name": "Sugar Land, Texas" },
+        { "@type": "City", "name": "Katy, Texas" },
+        { "@type": "City", "name": "Missouri City, Texas" },
+        { "@type": "City", "name": "Richmond, Texas" },
+        { "@type": "City", "name": "Rosenberg, Texas" },
+        { "@type": "City", "name": "Fulshear, Texas" },
+        { "@type": "City", "name": "Stafford, Texas" },
+        { "@type": "City", "name": "Cypress, Texas" },
+        { "@type": "City", "name": "Spring, Texas" },
+        { "@type": "City", "name": "Humble, Texas" },
+        { "@type": "City", "name": "Pasadena, Texas" }
+      ],
+      "founder": { "@id": "https://ctsg-htx.com/#anthony" },
+      "knowsAbout": [
+        "Home service marketing", "HVAC marketing", "Plumbing marketing",
+        "Unsold estimate follow-up", "Customer win-back campaigns",
+        "Maintenance plan sales", "Marketing attribution", "Holdout testing",
+        "Housecall Pro", "Jobber", "ServiceTitan", "QuickBooks"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Home service data and campaigns",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Unsold estimate follow-up", "description": "Open estimates scored by value and likelihood to close, with follow-ups to the strongest prospects first." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dormant customer win-back", "description": "Customers past their normal service interval, targeted with win-back campaigns." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maintenance plan campaigns", "description": "Repeat customers without a plan, ranked and offered one." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing attribution", "description": "Leads traced from source to paid invoice, with cost per booked job by channel." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Missed call analysis", "description": "Missed and late-answered calls matched to lost jobs, in dollars." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Review and seasonal campaigns", "description": "Review requests after completed jobs and weather-triggered seasonal pushes." } }
+        ]
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Setup",
+          "description": "Field software and QuickBooks connected into one database the client owns.",
+          "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2500", "maxPrice": "3500", "priceCurrency": "USD" }
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly analysis and campaigns",
+          "description": "Monthly analysis, campaigns, and a results report measured against a holdout group.",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "1500", "maxPrice": "2500", "priceCurrency": "USD", "unitText": "MONTH" }
+        }
+      ]
     },
     {
-      "@type": "Offer",
-      "name": "Monthly analysis and campaigns",
-      "description": "Monthly analysis, campaigns, and a results report measured against a holdout group.",
-      "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "1500", "maxPrice": "2500", "priceCurrency": "USD", "unitText": "MONTH" }
+      "@type": "Person",
+      "@id": "https://ctsg-htx.com/#anthony",
+      "name": "Anthony Johnson",
+      "jobTitle": "Data engineer",
+      "image": "https://ctsg-htx.com/anthony.jpg",
+      "worksFor": { "@id": "https://ctsg-htx.com/#business" },
+      "homeLocation": { "@type": "Place", "name": "Sugar Land, Texas" },
+      "sameAs": ["https://anthonyjctsg.com/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ctsg-htx.com/#website",
+      "url": "https://ctsg-htx.com/",
+      "name": "CTSG",
+      "publisher": { "@id": "https://ctsg-htx.com/#business" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ctsg-htx.com/#webpage",
+      "url": "https://ctsg-htx.com/",
+      "name": "HVAC, Plumbing and Home Service Marketing in Houston | CTSG",
+      "isPartOf": { "@id": "https://ctsg-htx.com/#website" },
+      "about": { "@id": "https://ctsg-htx.com/#business" },
+      "primaryImageOfPage": "https://ctsg-htx.com/og-card.png",
+      "inLanguage": "en-US"
     }
   ]
 }
@@ -300,6 +380,7 @@ textarea{resize:vertical;min-height:112px;margin-bottom:16px;display:block}
 /* ---------- footer ---------- */
 footer{background:var(--deep);color:#6f7c8e;padding:28px 0;font-size:14px;border-top:1px solid var(--deep-line)}
 .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.serving{margin:0 0 18px;padding-bottom:18px;border-bottom:1px solid var(--deep-line);font-size:13.5px;line-height:1.6;color:#6f7c8e;max-width:none}
 footer a{color:#aab4c2;text-decoration:none}
 footer a:hover{color:#fff}
 
@@ -350,7 +431,9 @@ footer a:hover{color:#fff}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="/">
-      <img src="ctsg-logo.png" alt="CTSG">
+      <!-- 3x the display height, 13KB against the original's 242KB: this is
+           the first image on the page, so its weight is on the critical path. -->
+      <img src="ctsg-logo-sm.png" alt="CTSG" width="48" height="38">
       <span>Calamity Technology Solutions Group</span>
     </a>
     <nav class="nav" aria-label="Main">
@@ -592,7 +675,7 @@ footer a:hover{color:#fff}
       <div class="person">
         <!-- Pulled from the final frame of Newdigital.mp4 on anthonyjctsg.com.
              Served larger than displayed so it holds up on a retina screen. -->
-        <img class="portrait" src="anthony.jpg" alt="Anthony Johnson" width="84" height="99">
+        <img class="portrait" src="anthony.jpg" alt="Anthony Johnson" width="84" height="99" loading="lazy" decoding="async">
         <div>
           <h3>Anthony Johnson</h3>
           <div class="role">Data engineer, Sugar Land</div>
@@ -642,6 +725,11 @@ footer a:hover{color:#fff}
 </main>
 
 <footer>
+  <div class="wrap">
+    <!-- Plain-text service area: the city names are what local searches
+         match on, and they read naturally here. -->
+    <p class="serving">Serving home service companies in Houston, Sugar Land, Katy, Missouri City, Richmond, Rosenberg, Fulshear, Stafford, Cypress, Spring, Humble, Pasadena, and the rest of Harris and Fort Bend counties.</p>
+  </div>
   <div class="wrap foot">
     <div>&copy; <span id="y">2026</span> Calamity Technology Solutions Group, LLC. Sugar Land, Texas.</div>
     <div><a href="#services">Services</a> &nbsp; <a href="#pricing">Pricing</a> &nbsp; <a href="#contact">Contact</a></div>
