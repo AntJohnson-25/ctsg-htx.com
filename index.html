@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calamity Technology Solutions Group — Data &amp; BI for Houston companies</title>
-<meta name="description" content="Data engineering, business intelligence, and honest AI readiness assessment for Houston-area companies from $10M to $250M. Fixed-fee data audit, $7,500.">
+<title>CTSG - Customer data and campaigns for Houston home service companies</title>
+<meta name="description" content="Data engineering and follow-up campaigns for Houston-area HVAC, plumbing, electrical, roofing, pest, pool, and landscaping companies. A database you own, monthly campaigns, results measured against a holdout group.">
 <link rel="canonical" href="https://ctsg-htx.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ctsg-htx.com/">
 <meta property="og:title" content="Calamity Technology Solutions Group">
-<meta property="og:description" content="I make the data you already have good enough to run the business on — and I'll tell you honestly whether you're ready for AI before someone sells you some.">
+<meta property="og:description" content="Customer data and follow-up campaigns for Houston home service companies, measured against a holdout group.">
 <meta property="og:site_name" content="CTSG">
 <!-- Interim card image: the logo on transparency, which some platforms will
      composite onto white. Replace with a proper 1200x630 card when one exists. -->
 <meta property="og:image" content="https://ctsg-htx.com/ctsg-logo.png">
 
-<!-- Inline SVG favicon rather than a generated .ico: it is the same mark as the
-     header lockup, stays sharp at every size, and costs no extra request. -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%23131a24'/><text x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23fbfaf7' text-anchor='middle'>C</text></svg>">
+<!-- Inline SVG favicon rather than a generated .ico: it stays sharp at every
+     size and costs no extra request. -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230d1520'/><text x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23ffffff' text-anchor='middle'>C</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -31,242 +31,317 @@
   "name": "Calamity Technology Solutions Group, LLC",
   "alternateName": "CTSG",
   "url": "https://ctsg-htx.com/",
-  "description": "Data engineering, business intelligence, and AI readiness assessment for mid-market Houston companies.",
-  "areaServed": { "@type": "City", "name": "Houston, Texas" },
+  "description": "Customer data engineering and follow-up campaigns for Houston-area home service companies, measured against a holdout group.",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Harris County, Texas" },
+    { "@type": "AdministrativeArea", "name": "Fort Bend County, Texas" }
+  ],
   "address": { "@type": "PostalAddress", "addressLocality": "Sugar Land", "addressRegion": "TX", "addressCountry": "US" },
   "founder": { "@type": "Person", "name": "Anthony Johnson" },
-  "makesOffer": {
-    "@type": "Offer",
-    "name": "Data Audit",
-    "price": "7500",
-    "priceCurrency": "USD",
-    "description": "Two to three week fixed-fee assessment: data inventory, readiness scorecard, three priced opportunities, and one working proof-of-concept."
-  }
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Setup",
+      "description": "Field software and QuickBooks connected into one database the client owns.",
+      "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2500", "maxPrice": "3500", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "Offer",
+      "name": "Monthly analysis and campaigns",
+      "description": "Monthly analysis, campaigns, and a results report measured against a holdout group.",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "1500", "maxPrice": "2500", "priceCurrency": "USD", "unitText": "MONTH" }
+    }
+  ]
 }
 </script>
 
+<!-- Set before first paint so the reveal styles only apply when the script
+     that removes them is known to be running. Without JS, nothing is hidden. -->
+<script>document.documentElement.className += ' js';</script>
+
 <style>
 :root{
-  --ink:#12161c;
-  --ink-2:#39424f;
-  --ink-3:#69737f;
-  --line:#e2e0da;
-  --paper:#fbfaf7;
-  --paper-2:#f3f1ea;
-  --deep:#131a24;
-  --deep-2:#1d2531;
-  --accent:#9a4b23;
-  --accent-soft:#f0e2d8;
-  --max:1080px;
+  --ink:#0d1520;
+  --ink-2:#3a4555;
+  --ink-3:#6b7685;
+  --line:#e3e6eb;
+  --bg:#ffffff;
+  --bg-2:#f5f6f8;
+  --deep:#0d1520;
+  --deep-2:#16212f;
+  --deep-line:#243142;
+  --accent:#b4532a;
+  --accent-2:#d4703f;
+  --radius:14px;
+  --max:1160px;
+  --ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
 body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font:400 17px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  margin:0;background:var(--bg);color:var(--ink);
+  font:400 16.5px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:500;line-height:1.15;letter-spacing:-.01em;margin:0}
-p{margin:0 0 1.1em}
+h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;font-weight:600;line-height:1.12;letter-spacing:-.02em;margin:0}
+p{margin:0 0 1em}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
-.narrow{max-width:760px}
+.label{
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  color:var(--accent);margin-bottom:16px;
+}
+.sec-head{max-width:720px;margin-bottom:32px}
+.sec-head h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:10px}
+.sec-head p{color:var(--ink-2);font-size:17px;margin:0}
+section{padding:72px 0}
 
 /* ---------- header ---------- */
-.top{border-bottom:1px solid var(--line);background:var(--paper)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px;padding-bottom:20px;flex-wrap:wrap}
-.brand{display:flex;align-items:baseline;gap:11px;text-decoration:none}
-.mark{
-  font-family:Fraunces,Georgia,serif;font-size:19px;letter-spacing:.14em;
-  color:var(--paper);background:var(--deep);padding:7px 11px 6px;border-radius:3px;line-height:1;
+.top{
+  position:sticky;top:0;z-index:30;
+  background:rgba(255,255,255,.86);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--line);
 }
-.brand span{font-size:13.5px;color:var(--ink-3);letter-spacing:.02em}
-.brand img{height:34px;width:auto;display:block}
-.top-contact{font-size:14.5px;color:var(--ink-2);display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-.top-contact a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px}
-.top-contact a:hover{border-color:var(--accent);color:var(--accent)}
-.top-contact a.is-here{border-color:var(--accent);color:var(--accent)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:38px;width:auto;display:block}
+.brand span{font-size:13.5px;color:var(--ink-3);font-weight:500}
+.nav{display:flex;align-items:center;gap:28px;font-size:14.5px;font-weight:500}
+.nav a{text-decoration:none;color:var(--ink-2)}
+.nav a:hover{color:var(--ink)}
+.nav a.btn-sm{
+  color:#fff;background:var(--ink);padding:9px 16px;border-radius:999px;
+  transition:background .2s;
+}
+.nav a.btn-sm:hover{background:var(--accent)}
 
-/* ---------- header contact popover ---------- */
-/* Anchored to the header rather than the page, so it drops from the button on
-   every viewport without a scroll listener. */
-.nav-contact-item{position:relative}
-.nav-contact-toggle{
-  font:inherit;color:var(--ink-2);background:none;border:0;border-bottom:1px solid var(--line);
-  padding:0 0 1px;cursor:pointer;
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font:600 15.5px/1 Inter,sans-serif;text-decoration:none;border:0;cursor:pointer;
+  padding:16px 26px;border-radius:999px;background:var(--ink);color:#fff;
+  transition:background .2s,transform .2s var(--ease);
 }
-.nav-contact-toggle:hover{border-color:var(--accent);color:var(--accent)}
-.nav-contact-panel{
-  position:absolute;right:0;top:calc(100% + 14px);z-index:20;width:290px;
-  background:var(--paper);border:1px solid var(--ink);padding:22px 20px;
-  box-shadow:0 14px 34px rgba(19,26,36,.13);
-}
-.nav-contact-panel p{font-size:14.5px;color:var(--ink-2);margin:0 0 14px;line-height:1.55}
-.nav-contact-panel input{margin-bottom:9px}
-.nav-contact-panel button{width:100%}
+.btn:hover{background:var(--accent);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 1px var(--ink);background:transparent}
 
-/* ---------- forms ---------- */
+/* ---------- hero ---------- */
+.hero{padding:64px 0 72px;background:linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(32px,4.2vw,48px);margin-bottom:22px;max-width:19ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.trades{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.trades li{
+  font-size:14px;font-weight:500;color:var(--ink);background:var(--bg);
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px;
+}
+.hero .lede{font-size:clamp(17px,1.8vw,19px);color:var(--ink-2);max-width:54ch;margin-bottom:34px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* The ideal-customer test, written as a checklist the owner can run on
+   themselves in five seconds. */
+.glance{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px;box-shadow:0 24px 60px -28px rgba(13,21,32,.28);
+}
+.glance h2{font-size:22px;margin-bottom:6px}
+.glance .sub{font-size:14.5px;color:var(--ink-3);margin:0 0 18px}
+.glance ul{list-style:none;margin:0;padding:0}
+.glance li{
+  display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;
+  padding:13px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2);line-height:1.5;
+}
+.glance li b{color:var(--ink);font-weight:600}
+.check{
+  width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.check svg{width:12px;height:12px}
+.glance .foot-note{margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-3)}
+
+/* ---------- services: flip cards ---------- */
+.services{background:var(--deep);color:#fff}
+.services .sec-head p{color:#aab4c2}
+.services .label{color:var(--accent-2)}
+.hint{font-size:14px;color:#7d8a9b;margin-left:6px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+/* The button is the card, so keyboard and screen-reader users get
+   select-to-flip for free. Both faces share one grid cell, which makes the
+   card as tall as its longer face without a fixed height. */
+.flip{
+  display:block;width:100%;padding:0;margin:0;border:0;background:none;
+  font:inherit;color:inherit;text-align:left;cursor:pointer;
+  perspective:1400px;border-radius:var(--radius);
+  transition:transform .3s var(--ease);
+}
+.flip:hover{transform:translateY(-4px)}
+.flip:focus-visible{outline:2px solid var(--accent-2);outline-offset:4px}
+.flip-inner{
+  display:grid;min-height:176px;
+  transform-style:preserve-3d;transition:transform .75s var(--ease);
+}
+.flip[aria-pressed="true"] .flip-inner{transform:rotateY(180deg)}
+.face{
+  grid-area:1/1;display:flex;flex-direction:column;
+  padding:22px 24px 18px;border-radius:var(--radius);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden;
+}
+.front{background:var(--deep-2);border:1px solid var(--deep-line)}
+.flip:hover .front{border-color:#3a4a60}
+.back{
+  transform:rotateY(180deg);
+  background:linear-gradient(145deg,var(--accent) 0%,#8f3f1e 100%);
+  border:1px solid #c96a3f;
+}
+.num{font-size:12.5px;font-weight:600;letter-spacing:.12em;color:var(--accent-2)}
+.back .num{color:#ffd9c4}
+.card-title{display:block;font-family:"Inter Tight",Inter,sans-serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:10px 0 6px;line-height:1.2}
+.card-sub{display:block;color:#aab4c2;font-size:15.5px}
+.card-body{display:block;color:#fff2ea;font-size:15px;line-height:1.55}
+.back .card-title{margin-top:8px}
+.card-foot{
+  margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;
+  font-size:13px;color:#7d8a9b;font-weight:500;
+}
+.back .card-foot{color:#ffd9c4}
+.plus{
+  width:30px;height:30px;border-radius:50%;border:1px solid var(--deep-line);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:18px;line-height:1;color:#fff;transition:transform .3s var(--ease),border-color .2s;
+}
+.flip:hover .front .plus{transform:rotate(90deg);border-color:var(--accent-2)}
+
+/* ---------- process ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:1px solid var(--line)}
+.step{padding:24px 24px 24px 0;position:relative}
+.step + .step{padding-left:24px;border-left:1px solid var(--line)}
+.step::before{
+  counter-increment:s;content:counter(s);
+  display:block;font-family:"Inter Tight",Inter,sans-serif;font-size:14px;font-weight:600;color:var(--accent);margin-bottom:10px;
+}
+.step h3{font-size:19px;margin-bottom:4px}
+.when{display:block;font-size:13px;color:var(--ink-3);font-weight:500;margin-bottom:10px}
+.step p{font-size:15px;color:var(--ink-2);margin:0}
+
+/* Setup lines up under step 1; monthly spans steps 2-4. */
+.pbar{display:grid;grid-template-columns:1fr 3fr;gap:12px;margin-top:8px}
+.pbar-cell{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;
+  border:1px solid var(--line);border-radius:12px;padding:18px 22px;background:var(--bg-2);
+}
+.pbar-cell.main{background:var(--deep);border-color:var(--deep);color:#fff}
+.pbar .what{width:100%;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-3)}
+.pbar .main .what{color:#8d9aab}
+.pbar .fig{font-family:"Inter Tight",Inter,sans-serif;font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.pbar .fig small{font-size:15px;font-weight:500;color:#8d9aab;letter-spacing:0}
+.pnote{font-size:14.5px;color:var(--ink-2)}
+.pbar .main .pnote{color:#c3cad4}
+
+/* ---------- difference ---------- */
+.diff{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tile{
+  display:grid;grid-template-columns:40px 1fr;gap:4px 16px;align-items:start;
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;
+}
+.tile .icon{
+  grid-row:span 2;width:40px;height:40px;border-radius:10px;background:var(--ink);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+}
+.tile h3{font-size:17px;margin:2px 0 4px}
+.tile p{font-size:14.5px;color:var(--ink-2);margin:0;line-height:1.55}
+.tile svg{width:20px;height:20px}
+
+/* ---------- person (inside contact) ---------- */
+.person{
+  display:grid;grid-template-columns:84px 1fr;gap:18px;align-items:start;
+  margin-top:28px;padding:20px;border:1px solid var(--deep-line);border-radius:var(--radius);background:var(--deep-2);
+}
+/* The photo carries a thin black bar along its top edge (it is a video
+   frame). A box a little shorter than the photo's 5:6 ratio, anchored to the
+   bottom, crops it off. */
+.portrait{width:84px;height:99px;border-radius:10px;object-fit:cover;object-position:50% 100%;display:block;background:var(--deep)}
+.person h3{font-size:18px;margin-bottom:2px}
+.person .role{font-size:13.5px;color:#8d9aab;margin-bottom:8px}
+.contact-copy .person p{color:#aab4c2;font-size:14.5px;margin:0;line-height:1.55}
+
+/* ---------- contact ---------- */
+.contact{background:var(--deep);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+.contact h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:16px}
+.contact .label{color:var(--accent-2)}
+.contact-copy p{color:#aab4c2;font-size:17px;max-width:44ch}
+.contact-copy .meta{font-size:14px;color:#7d8a9b;margin:16px 0 0}
+.cta-form{background:var(--deep-2);border:1px solid var(--deep-line);border-radius:var(--radius);padding:30px}
+.cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 input,textarea{
   font:400 15.5px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:2px;
-  background:var(--paper);color:var(--ink);
+  width:100%;padding:13px 14px;border:1px solid var(--deep-line);border-radius:10px;
+  background:var(--deep);color:#fff;
 }
-input:focus,textarea:focus{outline:none;border-color:var(--accent)}
-textarea{resize:vertical;min-height:96px}
-button.btn{font:600 16px/1 Inter,sans-serif;border:0;cursor:pointer}
+input::placeholder,textarea::placeholder{color:#6f7c8e}
+input:focus,textarea:focus{outline:none;border-color:var(--accent-2)}
+textarea{resize:vertical;min-height:112px;margin-bottom:16px;display:block}
+.cta-form .btn{width:100%;justify-content:center;background:var(--accent)}
+.cta-form .btn:hover{background:var(--accent-2)}
 .form-status{font-size:15px;margin:14px 0 0;min-height:1.2em}
-.form-status.is-error{color:#9a2323}
-.form-status.is-ok{color:var(--accent)}
-.nav-contact-status{font-size:14px;margin:10px 0 0}
-.nav-contact-status.is-error{color:#9a2323}
-.nav-contact-status.is-ok{color:var(--accent)}
-/* Off-screen rather than display:none — a screen reader still reads the label,
+.form-status.is-error{color:#ff9b8a}
+.form-status.is-ok{color:#ffd9c4}
+/* Off-screen rather than display:none - a screen reader still reads the label,
    and a bot still finds the honeypot input. */
 .visually-hidden{
   position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
   clip:rect(0 0 0 0);white-space:nowrap;border:0;
 }
 
-/* ---------- hero ---------- */
-.hero{padding:96px 0 76px;border-bottom:1px solid var(--line)}
-.eyebrow{
-  font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
-  font-weight:600;margin-bottom:26px;
-}
-.hero h1{font-size:clamp(34px,5.4vw,58px);max-width:16ch;margin-bottom:26px}
-.hero .lede{font-size:clamp(18px,2.2vw,21px);color:var(--ink-2);max-width:60ch;line-height:1.6}
-.hero .lede strong{color:var(--ink);font-weight:500}
-
-/* ---------- generic section ---------- */
-section{padding:76px 0}
-.sec-label{
-  font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
-  font-weight:600;margin-bottom:20px;
-}
-h2{font-size:clamp(27px,3.6vw,38px);margin-bottom:26px;max-width:22ch}
-h3{font-size:20px;margin-bottom:9px}
-.big{font-size:19px;line-height:1.65}
-
-/* ---------- honest ---------- */
-.honest{background:var(--deep);color:#e8e5df;border-top:1px solid var(--deep-2)}
-.honest h2{color:#fff}
-.honest .sec-label{color:#8d9aab}
-.honest p{color:#c3c8d0}
-.honest strong{color:#fff;font-weight:500}
-.pull{
-  font-family:Fraunces,Georgia,serif;font-size:clamp(21px,2.8vw,27px);line-height:1.4;
-  color:#fff;border-left:2px solid var(--accent);padding-left:24px;margin:34px 0 0;max-width:52ch;
-}
-
-/* ---------- fit list ---------- */
-.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);margin-top:8px}
-.fit div{background:var(--paper);padding:26px 24px}
-.fit h3{font-family:Inter,sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;margin-bottom:7px}
-.fit p{font-size:15.5px;color:var(--ink-2);margin:0;line-height:1.6}
-.after-fit{margin-top:26px;color:var(--ink-3);font-size:16px}
-
-/* ---------- audit ---------- */
-.audit{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.steps{counter-reset:s;margin:36px 0 0;padding:0;list-style:none}
-.steps li{
-  counter-increment:s;position:relative;padding:0 0 30px 58px;
-  border-left:1px solid var(--line);margin-left:15px;
-}
-.steps li:last-child{border-left-color:transparent;padding-bottom:6px}
-.steps li::before{
-  content:counter(s);position:absolute;left:-15px;top:-2px;width:30px;height:30px;border-radius:50%;
-  background:var(--deep);color:var(--paper);font-size:13px;font-weight:600;
-  display:flex;align-items:center;justify-content:center;font-family:Inter,sans-serif;
-}
-.steps h3{margin-bottom:6px}
-.steps p{font-size:16px;color:var(--ink-2);margin:0;max-width:58ch}
-
-.price-box{
-  margin-top:44px;border:1px solid var(--ink);background:var(--paper);
-  padding:38px 34px;display:flex;gap:34px;align-items:flex-start;flex-wrap:wrap;
-}
-.price-fig{font-family:Fraunces,Georgia,serif;font-size:52px;line-height:1;letter-spacing:-.02em}
-.price-fig small{display:block;font-family:Inter,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:11px;font-weight:600}
-.price-copy{flex:1;min-width:260px}
-.price-copy p{margin:0 0 .8em;font-size:16.5px;color:var(--ink-2)}
-.price-copy p:last-child{margin:0}
-.price-copy b{color:var(--ink);font-weight:600}
-
-/* ---------- ladder ---------- */
-.ladder{width:100%;border-collapse:collapse;margin-top:10px;font-size:16px}
-.ladder th{
-  text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
-  font-weight:600;padding:0 16px 13px 0;border-bottom:1px solid var(--line);
-}
-.ladder td{padding:20px 16px 20px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
-.ladder td:first-child{color:var(--ink);font-weight:600;width:23%}
-.ladder td:last-child{white-space:nowrap;color:var(--ink);font-weight:600;text-align:right;padding-right:0}
-.note{margin-top:26px;color:var(--ink-3);font-size:16px;max-width:64ch}
-
-/* ---------- who ---------- */
-.who{background:var(--deep);color:#e8e5df}
-.who h2{color:#fff}
-.who .sec-label{color:#8d9aab}
-.who-grid{display:grid;grid-template-columns:200px 1fr;gap:46px;align-items:start}
-.portrait{
-  width:200px;height:240px;border-radius:2px;object-fit:cover;display:block;
-  background:var(--deep-2);border:1px solid #2b3441;
-}
-.who p{color:#c3c8d0;max-width:56ch}
-.who strong{color:#fff;font-weight:500}
-.creds{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:15px;max-width:56ch}
-.creds li{padding-left:20px;position:relative;color:#c3c8d0;font-size:16.5px;line-height:1.6}
-.creds li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:1px;background:var(--accent)}
-.creds b{color:#fff;font-weight:500}
-
-/* ---------- not-for ---------- */
-.notfor ul{list-style:none;margin:0;padding:0;display:grid;gap:17px;max-width:62ch}
-.notfor li{padding-left:26px;position:relative;color:var(--ink-2);font-size:16.5px}
-.notfor li::before{content:"—";position:absolute;left:0;color:var(--ink-3)}
-.notfor b{color:var(--ink);font-weight:600}
-
-/* ---------- cta ---------- */
-.cta{background:var(--accent-soft);border-top:1px solid #e3d0c3;text-align:center}
-.cta h2{margin:0 auto 22px;max-width:20ch}
-.cta p{color:var(--ink-2);max-width:52ch;margin:0 auto 34px;font-size:18px}
-.btn{
-  display:inline-block;background:var(--deep);color:var(--paper);text-decoration:none;
-  padding:17px 34px;font-size:16px;font-weight:600;border-radius:2px;letter-spacing:.01em;
-}
-.btn:hover{background:#000}
-.cta-alt{margin-top:24px;font-size:16px;color:var(--ink-2)}
-.cta-alt a{color:var(--ink);text-decoration:none;border-bottom:1px solid #d3bfae;padding-bottom:1px}
-.cta-alt a:hover{color:var(--accent);border-color:var(--accent)}
-.slots{margin-top:30px;font-size:14.5px;color:var(--ink-3);font-style:italic}
-/* The section is centred; the form is not. Fields read as a column to fill in,
-   not as more centred copy. */
-.cta-form{max-width:480px;margin:0 auto;text-align:left}
-.cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-.cta-form textarea{margin-bottom:16px}
-.cta-form input,.cta-form textarea{background:var(--paper)}
-.cta-form button{width:100%}
-@media(max-width:560px){.cta-form .row{grid-template-columns:1fr}}
-
 /* ---------- footer ---------- */
-footer{background:var(--deep);color:#79839a;padding:44px 0;font-size:14.5px}
-.foot{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;align-items:center}
-footer a{color:#c3c8d0;text-decoration:none}
+footer{background:var(--deep);color:#6f7c8e;padding:28px 0;font-size:14px;border-top:1px solid var(--deep-line)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#aab4c2;text-decoration:none}
 footer a:hover{color:#fff}
 
+/* ---------- scroll reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:980px){
+  .hero-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .cards{grid-template-columns:1fr 1fr}
+  .tiles{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;border-top:0}
+  .step,.step + .step{padding:20px 20px 20px 0;border-left:0;border-top:1px solid var(--line)}
+  .step:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}
+  .pbar{grid-template-columns:1fr}
+}
 @media(max-width:720px){
-  .hero{padding:64px 0 54px}
-  section{padding:58px 0}
-  .who-grid{grid-template-columns:1fr;gap:30px}
-  .portrait{width:100%;max-width:230px;height:270px}
-  .price-box{padding:30px 24px;gap:24px}
-  .ladder td:first-child{width:auto}
-  .ladder,.ladder tbody,.ladder tr,.ladder td{display:block;width:100%}
-  .ladder thead{display:none}
-  .ladder tr{padding:20px 0;border-bottom:1px solid var(--line)}
-  .ladder td{border:0;padding:0 0 7px}
-  .ladder td:last-child{text-align:left;padding:6px 0 0}
+  section{padding:52px 0}
+  .hero{padding:44px 0 52px}
+  .diff{padding:32px 0}
+  .wrap{padding:0 20px}
+  .nav a:not(.btn-sm){display:none}
+  .brand span{display:none}
+  .cards,.steps{grid-template-columns:1fr}
+  .flip-inner{min-height:150px}
+  .step:nth-child(even){padding-left:0;border-left:0}
+  .cta-form .row{grid-template-columns:1fr}
+}
+
+/* Rotation is the whole effect, so with reduced motion the faces cross-fade
+   in place instead of turning. */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .flip,.flip-inner,.btn,.plus{transition:none}
+  .flip:hover{transform:none}
+  .flip[aria-pressed="true"] .flip-inner{transform:none}
+  .back{transform:none;opacity:0;transition:opacity .2s}
+  .front{transition:opacity .2s}
+  .flip[aria-pressed="true"] .back{opacity:1}
+  .flip[aria-pressed="true"] .front{opacity:0}
+  .js .reveal{opacity:1;transform:none;transition:none}
 }
 </style>
 </head>
@@ -278,250 +353,349 @@ footer a:hover{color:#fff}
       <img src="ctsg-logo.png" alt="CTSG">
       <span>Calamity Technology Solutions Group</span>
     </a>
-    <div class="top-contact">
-      <a href="/" class="is-here">Home</a>
-      <a href="services.html">Services</a>
-      <span>Sugar Land, Texas</span>
-
-      <!-- No email address anywhere on the site on purpose: the branded mailbox
-           does not exist yet, so every mailto: link would bounce silently. This
-           popover is the short path; the form at the foot of the page is the
-           long one. -->
-      <div class="nav-contact-item">
-        <button type="button" class="nav-contact-toggle" aria-expanded="false" aria-controls="nav-contact-panel">Contact</button>
-        <div class="nav-contact-panel" id="nav-contact-panel" hidden>
-          <p>Leave an address and I&rsquo;ll get back to you.</p>
-          <form novalidate>
-            <label class="visually-hidden" for="nav-contact-name">Name</label>
-            <input id="nav-contact-name" type="text" autocomplete="name" maxlength="120" placeholder="Name (optional)">
-            <label class="visually-hidden" for="nav-contact-email">Email</label>
-            <input id="nav-contact-email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required>
-            <button type="submit" class="btn">Send</button>
-          </form>
-          <!-- Outside the form on purpose: the form is hidden on success, and
-               the confirmation has to outlive it. -->
-          <p class="nav-contact-status" role="status" aria-live="polite"></p>
-        </div>
-      </div>
-    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="btn-sm">Contact</a>
+    </nav>
   </div>
 </header>
 
+<main>
+
 <div class="hero">
-  <div class="wrap narrow">
-    <div class="eyebrow">Data &amp; business intelligence · Greater Houston</div>
-    <h1>I make the data you already have good enough to run the business on.</h1>
-    <p class="lede">And I'll tell you honestly whether you're ready for AI <strong>before</strong> someone sells you some.</p>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="label">Customer data and campaigns</div>
+      <h1>For Houston home service companies doing <em>$1M&nbsp;to&nbsp;$10M</em> a&nbsp;year.</h1>
+      <ul class="trades" aria-label="Trades I work with">
+        <li>HVAC</li><li>Plumbing</li><li>Electrical</li><li>Roofing</li><li>Pest control</li><li>Pool</li><li>Landscaping</li>
+      </ul>
+      <p class="lede">I connect your field software and QuickBooks into one database you own. Each month I find the revenue sitting in it, run the campaigns that go after it, and report what came back against a holdout group.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Book a 30-minute call</a>
+        <a class="btn ghost" href="#process">How it works</a>
+      </div>
+    </div>
+
+    <aside class="glance reveal" aria-labelledby="glance-title">
+      <h2 id="glance-title">You are a fit if</h2>
+      <p class="sub">Most of these describe your company.</p>
+      <ul>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>You own or run a <b>home service company</b> in Harris or Fort Bend County.</span></li>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>Revenue is <b>between $1M and $10M</b> a year.</span></li>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>Your jobs live in <b>Housecall Pro, Jobber, ServiceTitan, or QuickBooks</b>.</span></li>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>You have <b>years of past customers and open estimates</b> nobody has time to follow up on.</span></li>
+        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>There is <b>no marketing analyst</b> on staff.</span></li>
+      </ul>
+      <p class="foot-note">$2,500 to $3,500 setup, then $1,500 to $2,500 a month.</p>
+    </aside>
   </div>
 </div>
 
-<section class="honest">
-  <div class="wrap narrow">
-    <div class="sec-label">The honest version</div>
-    <h2>Somewhere in your company there's a spreadsheet the business actually runs on.</h2>
-    <p>One person maintains it. It pulls from three systems that don't talk to each other, it gets rebuilt by hand every month, and if that person left tomorrow you'd have a problem nobody wants to say out loud.</p>
-    <p>Meanwhile your board, your bank, or your best customer has started asking what you're doing with AI.</p>
-    <p>Here's what nobody selling you software will say: <strong>you can't automate a mess. You can only automate a process.</strong> Every AI project that fails in a mid-market company fails for the same boring reason — the data underneath it disagreed with itself, and nobody checked first.</p>
-    <div class="pull">I check first. Then I fix it. Then, if it makes sense, we automate it.</div>
-  </div>
-</section>
-
-<section>
+<section class="services" id="services">
   <div class="wrap">
-    <div class="narrow">
-      <div class="sec-label">Who this is for</div>
-      <h2>Not an industry. A situation.</h2>
-      <p class="big" style="color:var(--ink-2);margin-bottom:34px">You'll recognize yourself in most of these.</p>
+    <div class="sec-head reveal">
+      <div class="label">What I work on</div>
+      <h2>Six places revenue gets left behind.</h2>
+      <p>Each one comes from customers you already paid to get. <span class="hint">Select a card for details.</span></p>
     </div>
-    <div class="fit">
-      <div>
-        <h3>$10M–$250M in revenue</h3>
-        <p>No full-time data person. IT keeps the lights on, but nobody owns the numbers.</p>
-      </div>
-      <div>
-        <h3>Three or more systems that don't talk</h3>
-        <p>An ERP or field system, a CRM, accounting, payroll, and a pile of vendor portals.</p>
-      </div>
-      <div>
-        <h3>Grown by acquisition, or just grown fast</h3>
-        <p>Every location or division ended up doing it slightly differently.</p>
-      </div>
-      <div>
-        <h3>Somebody senior lives in Excel</h3>
-        <p>Days a month spent producing a report that should take four minutes.</p>
-      </div>
-      <div>
-        <h3>You've been pitched AI</h3>
-        <p>And you genuinely can't tell whether it would work on your business or not.</p>
-      </div>
-      <div>
-        <h3>You're in the Houston area</h3>
-        <p>I'll be in your office, not on a status call from three time zones away.</p>
-      </div>
+
+    <div class="cards">
+      <button type="button" class="flip reveal" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front">
+            <span class="num">1</span>
+            <span class="card-title">Unsold estimates</span>
+            <span class="card-sub">Quotes that went quiet.</span>
+            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
+          </span>
+          <span class="face back" aria-hidden="true">
+            <span class="num">1</span>
+            <span class="card-title">Unsold estimates</span>
+            <span class="card-body">Every open estimate scored by value and likelihood to close, with the reason behind each score. Follow-ups go to the strongest prospects first.</span>
+            <span class="card-foot">Select to close</span>
+          </span>
+        </span>
+      </button>
+
+      <button type="button" class="flip reveal" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front">
+            <span class="num">2</span>
+            <span class="card-title">Dormant customers</span>
+            <span class="card-sub">Due for service and not calling.</span>
+            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
+          </span>
+          <span class="face back" aria-hidden="true">
+            <span class="num">2</span>
+            <span class="card-title">Dormant customers</span>
+            <span class="card-body">Customers past their normal service interval, sorted by what they have spent and the age of their home. Win-back campaigns go to the ones most likely to book.</span>
+            <span class="card-foot">Select to close</span>
+          </span>
+        </span>
+      </button>
+
+      <button type="button" class="flip reveal" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front">
+            <span class="num">3</span>
+            <span class="card-title">Maintenance plans</span>
+            <span class="card-sub">Good customers who are not on one.</span>
+            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
+          </span>
+          <span class="face back" aria-hidden="true">
+            <span class="num">3</span>
+            <span class="card-title">Maintenance plans</span>
+            <span class="card-body">Repeat customers without a plan, ranked by job history and property. Plan offers go to people who already trust you.</span>
+            <span class="card-foot">Select to close</span>
+          </span>
+        </span>
+      </button>
+
+      <button type="button" class="flip reveal" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front">
+            <span class="num">4</span>
+            <span class="card-title">Marketing by source</span>
+            <span class="card-sub">Which spend books paid jobs.</span>
+            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
+          </span>
+          <span class="face back" aria-hidden="true">
+            <span class="num">4</span>
+            <span class="card-title">Marketing by source</span>
+            <span class="card-body">Every lead traced to where it came from and followed to a paid invoice. You see cost per booked job by channel, not calls or clicks.</span>
+            <span class="card-foot">Select to close</span>
+          </span>
+        </span>
+      </button>
+
+      <button type="button" class="flip reveal" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front">
+            <span class="num">5</span>
+            <span class="card-title">Missed calls</span>
+            <span class="card-sub">What slow callbacks cost.</span>
+            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
+          </span>
+          <span class="face back" aria-hidden="true">
+            <span class="num">5</span>
+            <span class="card-title">Missed calls</span>
+            <span class="card-body">Missed and late-answered calls matched against the jobs that did or did not follow, so the cost shows up in dollars.</span>
+            <span class="card-foot">Select to close</span>
+          </span>
+        </span>
+      </button>
+
+      <button type="button" class="flip reveal" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front">
+            <span class="num">6</span>
+            <span class="card-title">Reviews and seasonal</span>
+            <span class="card-sub">Timed to the job and the weather.</span>
+            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
+          </span>
+          <span class="face back" aria-hidden="true">
+            <span class="num">6</span>
+            <span class="card-title">Reviews and seasonal</span>
+            <span class="card-body">Review requests after completed jobs. Seasonal pushes triggered by freezes, hail, and heat, before the phones start ringing.</span>
+            <span class="card-foot">Select to close</span>
+          </span>
+        </span>
+      </button>
     </div>
-    <p class="after-fit">Manufacturers, distributors, contractors, energy services, multi-location operators, professional services firms. The industry changes. The problem doesn't.</p>
   </div>
 </section>
 
-<section class="audit">
-  <div class="wrap narrow">
-    <div class="sec-label">Start here</div>
-    <h2>The Data Audit</h2>
-    <p class="big" style="color:var(--ink-2)">Two to three weeks. Deliberately small, deliberately cheap — because it's how we both find out whether we should work together on anything bigger.</p>
-
-    <ol class="steps">
-      <li>
-        <h3>A map of your data — one page</h3>
-        <p>Every system you run, what's in it, how it connects, and where the same number lives in three places with three different values. Most owners have never seen this drawn. It's usually the most uncomfortable and most useful page in the engagement.</p>
-      </li>
-      <li>
-        <h3>A Data Readiness Score — 0 to 100</h3>
-        <p>Eight dimensions: completeness, duplicate and matching problems, timeliness, where numbers come from, who can see what, whether "revenue" means the same thing in two departments, how well systems integrate, and what's documented. Standardized — so your score means something against other companies your size, not just against your own gut.</p>
-      </li>
-      <li>
-        <h3>Three things worth doing, ranked and priced</h3>
-        <p>Not a wish list. Each one scored on value against feasibility, with a real effort estimate and a real dollar figure. At least one automation or AI play. At least one piece of basic reporting you should already have and don't.</p>
-      </li>
-      <li>
-        <h3>One working thing, built on your real data</h3>
-        <p>Not a mockup. Something that runs: a reconciliation that finds actual discrepancies in your actual numbers, an automated version of that monthly spreadsheet, or a tool that pulls data out of the PDFs your team is currently retyping. You keep it whether or not we work together again.</p>
-      </li>
-      <li>
-        <h3>A 90-minute readout</h3>
-        <p>The map, the score, the roadmap — with prices attached, so you can decide what happens next without sitting through another sales pitch.</p>
-      </li>
-    </ol>
-
-    <div class="price-box">
-      <div class="price-fig">$7,500<small>Fixed fee</small></div>
-      <div class="price-copy">
-        <p>Not hourly. Not a range. Not plus expenses.</p>
-        <p><b>And if you sit through the readout and don't think it was worth it, don't pay.</b></p>
-        <p>I can offer that because it hasn't happened. If it does, I'd rather find out than argue about an invoice.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap narrow">
-    <div class="sec-label">What happens after</div>
-    <h2>Most audits turn into one of these.</h2>
-    <p class="big" style="color:var(--ink-2);margin-bottom:32px">All fixed-fee. You're buying an outcome, not my hours.</p>
-
-    <table class="ladder">
-      <thead>
-        <tr><th>Engagement</th><th>What it is</th><th>Price</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Embedded build</td>
-          <td>I work inside your business for 3–6 weeks and ship the highest-value item from the audit.</td>
-          <td>$18–35k</td>
-        </tr>
-        <tr>
-          <td>Single fix</td>
-          <td>One specific thing, built and handed over. Two to four weeks.</td>
-          <td>$8–15k</td>
-        </tr>
-        <tr>
-          <td>Ongoing</td>
-          <td>One to two days a week, on site. I own your data function the way a full-time hire would, without the hire.</td>
-          <td>$6–9k/mo</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p class="note">For context: a competent data engineer in Houston costs $130–170k plus benefits, plus six months to find, plus the risk they leave. This is the version where somebody senior shows up next week.</p>
-  </div>
-</section>
-
-<section class="who">
+<section id="process">
   <div class="wrap">
-    <div class="sec-label">Who you'd actually be working with</div>
-    <div class="who-grid">
-      <!-- Pulled from the final frame of Newdigital.mp4 on anthonyjctsg.com:
-           that clip morphs an illustration into the real photograph, and this
-           is where it settles. Served at 3x the display size so it holds up on
-           a retina screen. -->
-      <img class="portrait" src="anthony.jpg" alt="Anthony Johnson" width="200" height="240">
-      <div>
-        <h2 style="margin-bottom:20px">Anthony Johnson</h2>
-        <p><strong>One person. The one who does the work, in the room, every time.</strong> No account manager, no bench being billed to you, no junior you've never met showing up on week two.</p>
-        <ul class="creds">
-          <li><b>Five years end to end</b> — data engineering through data science. The plumbing, the reporting, and the modeling on top. Most firms sell you one of those three and subcontract the rest.</li>
-          <li><b>Regulated, multi-system, adversarially messy data.</b> That's the hardest kind there is. Everything after it is easier.</li>
-          <li><b>Deep in the Microsoft stack</b> — Azure, Fabric, Power BI, SQL — alongside Python and modern analytical tooling. Most boutique data shops chase venture-backed startups and don't speak to a CFO who lives in Excel and already pays for Microsoft 365.</li>
-          <li><b>I know enough about AI to tell you no.</b> That's rarer, and worth more to you right now, than knowing enough to say yes.</li>
-        </ul>
+    <div class="sec-head reveal">
+      <div class="label">How it works</div>
+      <h2>Set up once. Run and measure every month.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <h3>Set up</h3>
+        <span class="when">2 to 3 weeks</span>
+        <p>Your systems connected into one clean database that you own. Duplicate customers merged, every job tied to an address, every lead tagged with its real source.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Analyze</h3>
+        <span class="when">Monthly</span>
+        <p>Estimates scored, dormant customers and plan candidates flagged, and every customer profiled by their home.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Run campaigns</h3>
+        <span class="when">Monthly</span>
+        <p>You approve each campaign. I build it, send it, and track it. Email and mail first; text messages only with customer consent.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Measure</h3>
+        <span class="when">Monthly report</span>
+        <p>A random slice of each list gets nothing. The difference between the two groups is what the campaign caused, reported on one page.</p>
+      </div>
+    </div>
+
+    <!-- Pricing sits under the steps it pays for: setup under step 1, the
+         monthly fee spanning the three steps that repeat. Saves a section. -->
+    <div class="pbar" id="pricing">
+      <div class="pbar-cell reveal">
+        <span class="what">Setup, one time</span>
+        <span class="fig">$2,500 - $3,500</span>
+        <span class="pnote">Depends on how many systems you run.</span>
+      </div>
+      <div class="pbar-cell main reveal">
+        <span class="what">Monthly</span>
+        <span class="fig">$1,500 - $2,500 <small>/ mo</small></span>
+        <span class="pnote">Analysis, campaigns, and the results report. Month to month after the first three months.</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="notfor">
-  <div class="wrap narrow">
-    <div class="sec-label">Who this isn't for</div>
-    <h2>I'd rather tell you on the first call.</h2>
-    <ul>
-      <li><b>Companies with a working internal data team.</b> You don't need me — you need to listen to them.</li>
-      <li><b>Anyone who wants a strategy document.</b> This produces a map, a score, three priced options, and something that runs.</li>
-      <li><b>Anyone who already signed the AI contract.</b> Call me in a year.</li>
-      <li><b>Anyone shopping hourly rates.</b> I quote fixed fees, because being fast should benefit both of us.</li>
-    </ul>
+<section class="diff" aria-label="What is different">
+  <div class="wrap">
+    <div class="tiles">
+      <div class="tile reveal">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+        </div>
+        <h3>Know the house, not just the name</h3>
+        <p>Every customer profiled by their home, so campaigns go to the homes that actually need the work.</p>
+      </div>
+      <div class="tile reveal">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+        </div>
+        <h3>Results against a holdout</h3>
+        <p>Dashboards show activity. A holdout group shows what the campaign actually caused, separate from revenue you would have gotten anyway.</p>
+      </div>
+      <div class="tile reveal">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        </div>
+        <h3>Your data stays yours</h3>
+        <p>The database is set up in your name. If we stop working together, you keep it and everything in it.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="cta" id="contact">
-  <div class="wrap narrow">
-    <h2>A 30-minute call.</h2>
-    <p>I'll ask what systems you run and where the manual work is. If the audit isn't the right thing for you, I'll say so on that call, and it costs you nothing.</p>
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy reveal">
+      <div class="label">Contact</div>
+      <h2>A 30-minute call.</h2>
+      <p>Tell me what software you run and roughly how many past customers and open estimates you have. Usually I can tell you on that call where the money is.</p>
 
-    <form class="cta-form" id="inquiry-form" data-source="ctsg-htx-cta" novalidate>
-      <div class="row">
+      <div class="person">
+        <!-- Pulled from the final frame of Newdigital.mp4 on anthonyjctsg.com.
+             Served larger than displayed so it holds up on a retina screen. -->
+        <img class="portrait" src="anthony.jpg" alt="Anthony Johnson" width="84" height="99">
         <div>
-          <label class="visually-hidden" for="inquiry-name">Name</label>
-          <input id="inquiry-name" type="text" autocomplete="name" maxlength="120" placeholder="Name" required>
-        </div>
-        <div>
-          <label class="visually-hidden" for="inquiry-company">Company</label>
-          <input id="inquiry-company" type="text" autocomplete="organization" maxlength="160" placeholder="Company (optional)">
-        </div>
-      </div>
-      <div class="row" style="grid-template-columns:1fr">
-        <div>
-          <label class="visually-hidden" for="inquiry-email">Email</label>
-          <input id="inquiry-email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required>
+          <h3>Anthony Johnson</h3>
+          <div class="role">Data engineer, Sugar Land</div>
+          <p>Five years of data engineering, reporting, and analytics on regulated, multi-system data. You work with me directly. No account managers, no subcontractors.</p>
         </div>
       </div>
-      <label class="visually-hidden" for="inquiry-message">What you're dealing with</label>
-      <textarea id="inquiry-message" maxlength="4000" placeholder="What systems you run, and where the manual work is. Optional &mdash; a name and an address is enough."></textarea>
+      <p class="meta">Replies within one business day.</p>
+    </div>
 
-      <!-- Honeypot: invisible to people, irresistible to bots. A filled
-           value means the submission is scripted, so it is dropped. -->
-      <div class="visually-hidden" aria-hidden="true">
-        <label for="inquiry-website">Leave this field empty</label>
-        <input id="inquiry-website" type="text" tabindex="-1" autocomplete="off">
-      </div>
+    <div class="reveal">
+      <form class="cta-form" id="inquiry-form" data-source="ctsg-htx-cta" novalidate>
+        <div class="row">
+          <div>
+            <label class="visually-hidden" for="inquiry-name">Name</label>
+            <input id="inquiry-name" type="text" autocomplete="name" maxlength="120" placeholder="Name" required>
+          </div>
+          <div>
+            <label class="visually-hidden" for="inquiry-company">Company</label>
+            <input id="inquiry-company" type="text" autocomplete="organization" maxlength="160" placeholder="Company (optional)">
+          </div>
+        </div>
+        <div class="row" style="grid-template-columns:1fr">
+          <div>
+            <label class="visually-hidden" for="inquiry-email">Email</label>
+            <input id="inquiry-email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required>
+          </div>
+        </div>
+        <label class="visually-hidden" for="inquiry-message">What software you run</label>
+        <textarea id="inquiry-message" maxlength="4000" placeholder="What software you run, and anything else useful. Optional."></textarea>
 
-      <button type="submit" class="btn">Start a conversation</button>
-    </form>
-    <!-- Outside the form on purpose: the form is hidden on success, and the
-         confirmation has to outlive it. -->
-    <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
+        <!-- Honeypot: invisible to people, irresistible to bots. A filled
+             value means the submission is scripted, so it is dropped. -->
+        <div class="visually-hidden" aria-hidden="true">
+          <label for="inquiry-website">Leave this field empty</label>
+          <input id="inquiry-website" type="text" tabindex="-1" autocomplete="off">
+        </div>
 
-    <p class="slots">I take two audits at a time. That's a real constraint, not a closing line.</p>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <!-- Outside the form on purpose: the form is hidden on success, and the
+           confirmation has to outlive it. -->
+      <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
+    </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap foot">
-    <div>© <span id="y">2026</span> Calamity Technology Solutions Group, LLC · Sugar Land, Texas</div>
-    <div><a href="services.html">Services</a> · <a href="#contact">Contact</a></div>
+    <div>&copy; <span id="y">2026</span> Calamity Technology Solutions Group, LLC. Sugar Land, Texas.</div>
+    <div><a href="#services">Services</a> &nbsp; <a href="#pricing">Pricing</a> &nbsp; <a href="#contact">Contact</a></div>
   </div>
 </footer>
 
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script>
+(function () {
+    'use strict';
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    /* Flip cards. aria-pressed drives the CSS, and aria-hidden follows the
+     * visible face so a screen reader reads only what is showing. */
+    document.querySelectorAll('.flip').forEach(function (card) {
+        var front = card.querySelector('.front');
+        var back = card.querySelector('.back');
+        card.addEventListener('click', function () {
+            var on = card.getAttribute('aria-pressed') !== 'true';
+            card.setAttribute('aria-pressed', on ? 'true' : 'false');
+            front.setAttribute('aria-hidden', on ? 'true' : 'false');
+            back.setAttribute('aria-hidden', on ? 'false' : 'true');
+        });
+    });
+
+    /* Reveal on scroll, staggered within each group. Anything the observer
+     * cannot handle is shown immediately rather than left invisible. */
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('in'); });
+        return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) { return; }
+            var el = entry.target;
+            var siblings = Array.prototype.filter.call(el.parentNode.children, function (c) {
+                return c.classList.contains('reveal');
+            });
+            el.style.transitionDelay = (Math.max(0, siblings.indexOf(el)) * 70) + 'ms';
+            el.classList.add('in');
+            io.unobserve(el);
+            /* Once it has arrived, hand the element back its own transitions -
+             * otherwise the card hover would inherit the slow, delayed reveal. */
+            el.addEventListener('transitionend', function done(e) {
+                if (e.target !== el) { return; }
+                el.removeEventListener('transitionend', done);
+                el.style.transitionDelay = '';
+                el.classList.remove('reveal', 'in');
+            });
+        });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    items.forEach(function (el) { io.observe(el); });
+}());
+</script>
 <script src="ctsg-data.js"></script>
 <script src="contact.js"></script>
 </body>
