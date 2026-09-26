@@ -1,790 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Title leads with what an owner types into Google, brand last. Kept under
-     about 60 characters so it is not cut off in results. -->
-<title>HVAC, Plumbing and Home Service Marketing in Houston | CTSG</title>
-<meta name="description" content="Follow-up campaigns and customer data for Houston HVAC, plumbing, electrical and roofing companies doing $1M-$10M. Results measured against a holdout.">
-<link rel="canonical" href="https://ctsg-htx.com/">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0d1520">
-
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:url" content="https://ctsg-htx.com/">
-<meta property="og:site_name" content="CTSG">
-<meta property="og:title" content="Customer data and campaigns for Houston home service companies">
-<meta property="og:description" content="For HVAC, plumbing, electrical, roofing, pest, pool, and landscaping companies doing $1M to $10M a year. Campaigns on the customers you already have, measured against a holdout group.">
-<meta property="og:image" content="https://ctsg-htx.com/og-card.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CTSG: for Houston home service companies doing $1M to $10M a year.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Customer data and campaigns for Houston home service companies">
-<meta name="twitter:description" content="Campaigns on the customers you already have, measured against a holdout group.">
-<meta name="twitter:image" content="https://ctsg-htx.com/og-card.png">
-
-<!-- The CTSG logo on a white tile, as real files rather than a data: URI:
-     Google only shows a site icon in results when it can crawl one, and it
-     wants a multiple of 48px. White keeps the black mark visible on dark tabs. -->
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
-<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://ctsg-htx.com/#business",
-      "name": "Calamity Technology Solutions Group, LLC",
-      "alternateName": "CTSG",
-      "url": "https://ctsg-htx.com/",
-      "logo": "https://ctsg-htx.com/ctsg-logo.png",
-      "image": "https://ctsg-htx.com/og-card.png",
-      "description": "Customer data and follow-up campaigns for Houston-area HVAC, plumbing, electrical, roofing, pest control, pool, and landscaping companies doing $1M to $10M a year, with results measured against a holdout group.",
-      "priceRange": "$$",
-      "address": { "@type": "PostalAddress", "addressLocality": "Sugar Land", "addressRegion": "TX", "addressCountry": "US" },
-      "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Harris County, Texas" },
-        { "@type": "AdministrativeArea", "name": "Fort Bend County, Texas" },
-        { "@type": "City", "name": "Houston, Texas" },
-        { "@type": "City", "name": "Sugar Land, Texas" },
-        { "@type": "City", "name": "Katy, Texas" },
-        { "@type": "City", "name": "Missouri City, Texas" },
-        { "@type": "City", "name": "Richmond, Texas" },
-        { "@type": "City", "name": "Rosenberg, Texas" },
-        { "@type": "City", "name": "Fulshear, Texas" },
-        { "@type": "City", "name": "Stafford, Texas" },
-        { "@type": "City", "name": "Cypress, Texas" },
-        { "@type": "City", "name": "Spring, Texas" },
-        { "@type": "City", "name": "Humble, Texas" },
-        { "@type": "City", "name": "Pasadena, Texas" }
-      ],
-      "founder": { "@id": "https://ctsg-htx.com/#anthony" },
-      "knowsAbout": [
-        "Home service marketing", "HVAC marketing", "Plumbing marketing",
-        "Unsold estimate follow-up", "Customer win-back campaigns",
-        "Maintenance plan sales", "Marketing attribution", "Holdout testing",
-        "Housecall Pro", "Jobber", "ServiceTitan", "QuickBooks"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Home service data and campaigns",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Unsold estimate follow-up", "description": "Open estimates scored by value and likelihood to close, with follow-ups to the strongest prospects first." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dormant customer win-back", "description": "Customers past their normal service interval, targeted with win-back campaigns." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maintenance plan campaigns", "description": "Repeat customers without a plan, ranked and offered one." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing attribution", "description": "Leads traced from source to paid invoice, with cost per booked job by channel." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Missed call analysis", "description": "Missed and late-answered calls matched to lost jobs, in dollars." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Review and seasonal campaigns", "description": "Review requests after completed jobs and weather-triggered seasonal pushes." } }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Follow-Up for Houston Home Services | CTSG</title>
+  <meta name="description" content="Turn customer history into repeat business with Anthony Johnson. Follow-up campaigns for Houston home-service companies, with results you can measure.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://ctsg-htx.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Calamity Technology Solutions Group">
+  <meta property="og:title" content="More booked jobs. From customers you already know. | CTSG">
+  <meta property="og:description" content="Turn customer history into repeat business with Anthony Johnson. Follow-up campaigns for Houston home-service companies, with results you can measure.">
+  <meta property="og:url" content="https://ctsg-htx.com/">
+  <meta property="og:image" content="https://ctsg-htx.com/assets/houston-neighborhood.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Illustrated Houston neighborhood with homes and a home-service work van.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="More booked jobs. From customers you already know. | CTSG">
+  <meta name="twitter:description" content="Turn customer history into repeat business with Anthony Johnson. Follow-up campaigns for Houston home-service companies, with results you can measure.">
+  <meta name="twitter:image" content="https://ctsg-htx.com/assets/houston-neighborhood.png">
+  <meta name="twitter:image:alt" content="Illustrated Houston neighborhood with homes and a home-service work van.">
+  <meta name="theme-color" content="#eef4f8">
+  <link rel="icon" href="https://ctsg-htx.com/ctsg-logo-sm.png">
+  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="preload" as="image" href="assets/houston-neighborhood.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ctsg-htx.com/#website",
+        "url": "https://ctsg-htx.com/",
+        "name": "Calamity Technology Solutions Group",
+        "alternateName": "CTSG",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://ctsg-htx.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://ctsg-htx.com/#organization",
+        "name": "Calamity Technology Solutions Group",
+        "alternateName": "CTSG",
+        "legalName": "Calamity Technology Solutions Group, LLC",
+        "url": "https://ctsg-htx.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ctsg-htx.com/ctsg-logo-sm.png",
+          "width": 144,
+          "height": 114
+        },
+        "location": { "@type": "Place", "name": "Sugar Land, Texas" },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Harris County, Texas" },
+          { "@type": "AdministrativeArea", "name": "Fort Bend County, Texas" }
         ]
       },
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "name": "Setup",
-          "description": "Field software and QuickBooks connected into one database the client owns.",
-          "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2500", "maxPrice": "3500", "priceCurrency": "USD" }
-        },
-        {
-          "@type": "Offer",
-          "name": "Monthly analysis and campaigns",
-          "description": "Monthly analysis, campaigns, and a results report measured against a holdout group.",
-          "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "1500", "maxPrice": "2500", "priceCurrency": "USD", "unitText": "MONTH" }
-        }
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://ctsg-htx.com/#anthony",
-      "name": "Anthony Johnson",
-      "jobTitle": "Data engineer",
-      "image": "https://ctsg-htx.com/anthony.jpg",
-      "worksFor": { "@id": "https://ctsg-htx.com/#business" },
-      "homeLocation": { "@type": "Place", "name": "Sugar Land, Texas" },
-      "sameAs": ["https://anthonyjctsg.com/"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://ctsg-htx.com/#website",
-      "url": "https://ctsg-htx.com/",
-      "name": "CTSG",
-      "publisher": { "@id": "https://ctsg-htx.com/#business" },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://ctsg-htx.com/#webpage",
-      "url": "https://ctsg-htx.com/",
-      "name": "HVAC, Plumbing and Home Service Marketing in Houston | CTSG",
-      "isPartOf": { "@id": "https://ctsg-htx.com/#website" },
-      "about": { "@id": "https://ctsg-htx.com/#business" },
-      "primaryImageOfPage": "https://ctsg-htx.com/og-card.png",
-      "inLanguage": "en-US"
-    }
-  ]
-}
-</script>
-
-<!-- Set before first paint so the reveal styles only apply when the script
-     that removes them is known to be running. Without JS, nothing is hidden. -->
-<script>document.documentElement.className += ' js';</script>
-
-<style>
-:root{
-  --ink:#0d1520;
-  --ink-2:#3a4555;
-  --ink-3:#6b7685;
-  --line:#e3e6eb;
-  --bg:#ffffff;
-  --bg-2:#f5f6f8;
-  --deep:#0d1520;
-  --deep-2:#16212f;
-  --deep-line:#243142;
-  --accent:#b4532a;
-  --accent-2:#d4703f;
-  --radius:14px;
-  --max:1160px;
-  --ease:cubic-bezier(.2,.7,.2,1);
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
-body{
-  margin:0;background:var(--bg);color:var(--ink);
-  font:400 16.5px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;font-weight:600;line-height:1.12;letter-spacing:-.02em;margin:0}
-p{margin:0 0 1em}
-a{color:inherit}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
-.label{
-  font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
-  color:var(--accent);margin-bottom:16px;
-}
-.sec-head{max-width:720px;margin-bottom:32px}
-.sec-head h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:10px}
-.sec-head p{color:var(--ink-2);font-size:17px;margin:0}
-section{padding:72px 0}
-
-/* ---------- header ---------- */
-.top{
-  position:sticky;top:0;z-index:30;
-  background:rgba(255,255,255,.86);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);
-  border-bottom:1px solid var(--line);
-}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{height:38px;width:auto;display:block}
-.brand span{font-size:13.5px;color:var(--ink-3);font-weight:500}
-.nav{display:flex;align-items:center;gap:28px;font-size:14.5px;font-weight:500}
-.nav a{text-decoration:none;color:var(--ink-2)}
-.nav a:hover{color:var(--ink)}
-.nav a.btn-sm{
-  color:#fff;background:var(--ink);padding:9px 16px;border-radius:999px;
-  transition:background .2s;
-}
-.nav a.btn-sm:hover{background:var(--accent)}
-
-/* ---------- buttons ---------- */
-.btn{
-  display:inline-flex;align-items:center;gap:10px;
-  font:600 15.5px/1 Inter,sans-serif;text-decoration:none;border:0;cursor:pointer;
-  padding:16px 26px;border-radius:999px;background:var(--ink);color:#fff;
-  transition:background .2s,transform .2s var(--ease);
-}
-.btn:hover{background:var(--accent);transform:translateY(-1px)}
-.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
-.btn.ghost:hover{box-shadow:inset 0 0 0 1px var(--ink);background:transparent}
-
-/* ---------- hero ---------- */
-.hero{padding:64px 0 72px;background:linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
-.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center}
-.hero h1{font-size:clamp(32px,4.2vw,48px);margin-bottom:22px;max-width:19ch}
-.hero h1 em{font-style:normal;color:var(--accent)}
-.trades{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
-.trades li{
-  font-size:14px;font-weight:500;color:var(--ink);background:var(--bg);
-  border:1px solid var(--line);border-radius:999px;padding:6px 14px;
-}
-.hero .lede{font-size:clamp(17px,1.8vw,19px);color:var(--ink-2);max-width:54ch;margin-bottom:34px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-
-/* The ideal-customer test, written as a checklist the owner can run on
-   themselves in five seconds. */
-.glance{
-  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
-  padding:30px;box-shadow:0 24px 60px -28px rgba(13,21,32,.28);
-}
-.glance h2{font-size:22px;margin-bottom:6px}
-.glance .sub{font-size:14.5px;color:var(--ink-3);margin:0 0 18px}
-.glance ul{list-style:none;margin:0;padding:0}
-.glance li{
-  display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;
-  padding:13px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2);line-height:1.5;
-}
-.glance li b{color:var(--ink);font-weight:600}
-.check{
-  width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;
-  display:flex;align-items:center;justify-content:center;margin-top:1px;
-}
-.check svg{width:12px;height:12px}
-.glance .foot-note{margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-3)}
-
-/* ---------- services: flip cards ---------- */
-.services{background:var(--deep);color:#fff}
-.services .sec-head p{color:#aab4c2}
-.services .label{color:var(--accent-2)}
-.hint{font-size:14px;color:#7d8a9b;margin-left:6px}
-
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-
-/* The button is the card, so keyboard and screen-reader users get
-   select-to-flip for free. Both faces share one grid cell, which makes the
-   card as tall as its longer face without a fixed height. */
-.flip{
-  display:block;width:100%;padding:0;margin:0;border:0;background:none;
-  font:inherit;color:inherit;text-align:left;cursor:pointer;
-  perspective:1400px;border-radius:var(--radius);
-  transition:transform .3s var(--ease);
-}
-.flip:hover{transform:translateY(-4px)}
-.flip:focus-visible{outline:2px solid var(--accent-2);outline-offset:4px}
-.flip-inner{
-  display:grid;min-height:176px;
-  transform-style:preserve-3d;transition:transform .75s var(--ease);
-}
-.flip[aria-pressed="true"] .flip-inner{transform:rotateY(180deg)}
-.face{
-  grid-area:1/1;display:flex;flex-direction:column;
-  padding:22px 24px 18px;border-radius:var(--radius);
-  -webkit-backface-visibility:hidden;backface-visibility:hidden;
-}
-.front{background:var(--deep-2);border:1px solid var(--deep-line)}
-.flip:hover .front{border-color:#3a4a60}
-.back{
-  transform:rotateY(180deg);
-  background:linear-gradient(145deg,var(--accent) 0%,#8f3f1e 100%);
-  border:1px solid #c96a3f;
-}
-.num{font-size:12.5px;font-weight:600;letter-spacing:.12em;color:var(--accent-2)}
-.back .num{color:#ffd9c4}
-.card-title{display:block;font-family:"Inter Tight",Inter,sans-serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:10px 0 6px;line-height:1.2}
-.card-sub{display:block;color:#aab4c2;font-size:15.5px}
-.card-body{display:block;color:#fff2ea;font-size:15px;line-height:1.55}
-.back .card-title{margin-top:8px}
-.card-foot{
-  margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;
-  font-size:13px;color:#7d8a9b;font-weight:500;
-}
-.back .card-foot{color:#ffd9c4}
-.plus{
-  width:30px;height:30px;border-radius:50%;border:1px solid var(--deep-line);
-  display:inline-flex;align-items:center;justify-content:center;
-  font-size:18px;line-height:1;color:#fff;transition:transform .3s var(--ease),border-color .2s;
-}
-.flip:hover .front .plus{transform:rotate(90deg);border-color:var(--accent-2)}
-
-/* ---------- process ---------- */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:1px solid var(--line)}
-.step{padding:24px 24px 24px 0;position:relative}
-.step + .step{padding-left:24px;border-left:1px solid var(--line)}
-.step::before{
-  counter-increment:s;content:counter(s);
-  display:block;font-family:"Inter Tight",Inter,sans-serif;font-size:14px;font-weight:600;color:var(--accent);margin-bottom:10px;
-}
-.step h3{font-size:19px;margin-bottom:4px}
-.when{display:block;font-size:13px;color:var(--ink-3);font-weight:500;margin-bottom:10px}
-.step p{font-size:15px;color:var(--ink-2);margin:0}
-
-/* Setup lines up under step 1; monthly spans steps 2-4. */
-.pbar{display:grid;grid-template-columns:1fr 3fr;gap:12px;margin-top:8px}
-.pbar-cell{
-  display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;
-  border:1px solid var(--line);border-radius:12px;padding:18px 22px;background:var(--bg-2);
-}
-.pbar-cell.main{background:var(--deep);border-color:var(--deep);color:#fff}
-.pbar .what{width:100%;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-3)}
-.pbar .main .what{color:#8d9aab}
-.pbar .fig{font-family:"Inter Tight",Inter,sans-serif;font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
-.pbar .fig small{font-size:15px;font-weight:500;color:#8d9aab;letter-spacing:0}
-.pnote{font-size:14.5px;color:var(--ink-2)}
-.pbar .main .pnote{color:#c3cad4}
-
-/* ---------- difference ---------- */
-.diff{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.tile{
-  display:grid;grid-template-columns:40px 1fr;gap:4px 16px;align-items:start;
-  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;
-}
-.tile .icon{
-  grid-row:span 2;width:40px;height:40px;border-radius:10px;background:var(--ink);color:#fff;
-  display:flex;align-items:center;justify-content:center;
-}
-.tile h3{font-size:17px;margin:2px 0 4px}
-.tile p{font-size:14.5px;color:var(--ink-2);margin:0;line-height:1.55}
-.tile svg{width:20px;height:20px}
-
-/* ---------- person (inside contact) ---------- */
-.person{
-  display:grid;grid-template-columns:84px 1fr;gap:18px;align-items:start;
-  margin-top:28px;padding:20px;border:1px solid var(--deep-line);border-radius:var(--radius);background:var(--deep-2);
-}
-/* The photo carries a thin black bar along its top edge (it is a video
-   frame). A box a little shorter than the photo's 5:6 ratio, anchored to the
-   bottom, crops it off. */
-.portrait{width:84px;height:99px;border-radius:10px;object-fit:cover;object-position:50% 100%;display:block;background:var(--deep)}
-.person h3{font-size:18px;margin-bottom:2px}
-.person .role{font-size:13.5px;color:#8d9aab;margin-bottom:8px}
-.contact-copy .person p{color:#aab4c2;font-size:14.5px;margin:0;line-height:1.55}
-
-/* ---------- contact ---------- */
-.contact{background:var(--deep);color:#fff}
-.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
-.contact h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:16px}
-.contact .label{color:var(--accent-2)}
-.contact-copy p{color:#aab4c2;font-size:17px;max-width:44ch}
-.contact-copy .meta{font-size:14px;color:#7d8a9b;margin:16px 0 0}
-.cta-form{background:var(--deep-2);border:1px solid var(--deep-line);border-radius:var(--radius);padding:30px}
-.cta-form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-input,textarea{
-  font:400 15.5px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  width:100%;padding:13px 14px;border:1px solid var(--deep-line);border-radius:10px;
-  background:var(--deep);color:#fff;
-}
-input::placeholder,textarea::placeholder{color:#6f7c8e}
-input:focus,textarea:focus{outline:none;border-color:var(--accent-2)}
-textarea{resize:vertical;min-height:112px;margin-bottom:16px;display:block}
-.cta-form .btn{width:100%;justify-content:center;background:var(--accent)}
-.cta-form .btn:hover{background:var(--accent-2)}
-.form-status{font-size:15px;margin:14px 0 0;min-height:1.2em}
-.form-status.is-error{color:#ff9b8a}
-.form-status.is-ok{color:#ffd9c4}
-/* Off-screen rather than display:none - a screen reader still reads the label,
-   and a bot still finds the honeypot input. */
-.visually-hidden{
-  position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
-  clip:rect(0 0 0 0);white-space:nowrap;border:0;
-}
-
-/* ---------- footer ---------- */
-footer{background:var(--deep);color:#6f7c8e;padding:28px 0;font-size:14px;border-top:1px solid var(--deep-line)}
-.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.serving{margin:0 0 18px;padding-bottom:18px;border-bottom:1px solid var(--deep-line);font-size:13.5px;line-height:1.6;color:#6f7c8e;max-width:none}
-footer a{color:#aab4c2;text-decoration:none}
-footer a:hover{color:#fff}
-
-/* ---------- scroll reveal ---------- */
-.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.js .reveal.in{opacity:1;transform:none}
-
-/* ---------- responsive ---------- */
-@media(max-width:980px){
-  .hero-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
-  .cards{grid-template-columns:1fr 1fr}
-  .tiles{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr 1fr;border-top:0}
-  .step,.step + .step{padding:20px 20px 20px 0;border-left:0;border-top:1px solid var(--line)}
-  .step:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}
-  .pbar{grid-template-columns:1fr}
-}
-@media(max-width:720px){
-  section{padding:52px 0}
-  .hero{padding:44px 0 52px}
-  .diff{padding:32px 0}
-  .wrap{padding:0 20px}
-  .nav a:not(.btn-sm){display:none}
-  .brand span{display:none}
-  .cards,.steps{grid-template-columns:1fr}
-  .flip-inner{min-height:150px}
-  .step:nth-child(even){padding-left:0;border-left:0}
-  .cta-form .row{grid-template-columns:1fr}
-}
-
-/* Rotation is the whole effect, so with reduced motion the faces cross-fade
-   in place instead of turning. */
-@media (prefers-reduced-motion: reduce){
-  html{scroll-behavior:auto}
-  .flip,.flip-inner,.btn,.plus{transition:none}
-  .flip:hover{transform:none}
-  .flip[aria-pressed="true"] .flip-inner{transform:none}
-  .back{transform:none;opacity:0;transition:opacity .2s}
-  .front{transition:opacity .2s}
-  .flip[aria-pressed="true"] .back{opacity:1}
-  .flip[aria-pressed="true"] .front{opacity:0}
-  .js .reveal{opacity:1;transform:none;transition:none}
-}
-</style>
+      {
+        "@type": "Person",
+        "@id": "https://ctsg-htx.com/#anthony-johnson",
+        "name": "Anthony Johnson",
+        "jobTitle": "Data engineer",
+        "image": "https://ctsg-htx.com/anthony.jpg",
+        "worksFor": { "@id": "https://ctsg-htx.com/#organization" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ctsg-htx.com/#customer-follow-up",
+        "name": "Customer data and follow-up campaigns",
+        "serviceType": "Customer data analysis and follow-up campaign management",
+        "description": "Customer data analysis and approved follow-up campaigns for unsold estimates, dormant customers, and maintenance plans, with results reporting.",
+        "provider": { "@id": "https://ctsg-htx.com/#organization" },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Harris County, Texas" },
+          { "@type": "AdministrativeArea", "name": "Fort Bend County, Texas" }
+        ],
+        "audience": { "@type": "BusinessAudience", "audienceType": "Home-service companies" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="/">
-      <!-- 3x the display height, 13KB against the original's 242KB: this is
-           the first image on the page, so its weight is on the critical path. -->
-      <img src="ctsg-logo-sm.png" alt="CTSG" width="48" height="38">
-      <span>Calamity Technology Solutions Group</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#services">Services</a>
-      <a href="#process">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact" class="btn-sm">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-<div class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="label">Customer data and campaigns</div>
-      <h1>For Houston home service companies doing <em>$1M&nbsp;to&nbsp;$10M</em> a&nbsp;year.</h1>
-      <ul class="trades" aria-label="Trades I work with">
-        <li>HVAC</li><li>Plumbing</li><li>Electrical</li><li>Roofing</li><li>Pest control</li><li>Pool</li><li>Landscaping</li>
-      </ul>
-      <p class="lede">I connect your field software and QuickBooks into one database you own. Each month I find the revenue sitting in it, run the campaigns that go after it, and report what came back against a holdout group.</p>
-      <div class="hero-actions">
-        <a class="btn" href="#contact">Book a 30-minute call</a>
-        <a class="btn ghost" href="#process">How it works</a>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="CTSG home">
+        <img src="https://ctsg-htx.com/ctsg-logo-sm.png" alt="" width="144" height="114">
+        <span>Calamity Technology<br>Solutions Group</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#opportunities">The opportunities</a>
+        <a href="#approach">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a class="nav-cta" href="#contact">Talk to Anthony</a>
+      </nav>
     </div>
+  </header>
 
-    <aside class="glance reveal" aria-labelledby="glance-title">
-      <h2 id="glance-title">You are a fit if</h2>
-      <p class="sub">Most of these describe your company.</p>
-      <ul>
-        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>You own or run a <b>home service company</b> in Harris or Fort Bend County.</span></li>
-        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>Revenue is <b>between $1M and $10M</b> a year.</span></li>
-        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>Your jobs live in <b>Housecall Pro, Jobber, ServiceTitan, or QuickBooks</b>.</span></li>
-        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>You have <b>years of past customers and open estimates</b> nobody has time to follow up on.</span></li>
-        <li><span class="check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2l2.3 2.3 4.7-4.9"/></svg></span><span>There is <b>no marketing analyst</b> on staff.</span></li>
-      </ul>
-      <p class="foot-note">$2,500 to $3,500 setup, then $1,500 to $2,500 a month.</p>
-    </aside>
-  </div>
-</div>
-
-<section class="services" id="services">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="label">What I work on</div>
-      <h2>Six places revenue gets left behind.</h2>
-      <p>Each one comes from customers you already paid to get. <span class="hint">Select a card for details.</span></p>
-    </div>
-
-    <div class="cards">
-      <button type="button" class="flip reveal" aria-pressed="false">
-        <span class="flip-inner">
-          <span class="face front">
-            <span class="num">1</span>
-            <span class="card-title">Unsold estimates</span>
-            <span class="card-sub">Quotes that went quiet.</span>
-            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
-          </span>
-          <span class="face back" aria-hidden="true">
-            <span class="num">1</span>
-            <span class="card-title">Unsold estimates</span>
-            <span class="card-body">Every open estimate scored by value and likelihood to close, with the reason behind each score. Follow-ups go to the strongest prospects first.</span>
-            <span class="card-foot">Select to close</span>
-          </span>
-        </span>
-      </button>
-
-      <button type="button" class="flip reveal" aria-pressed="false">
-        <span class="flip-inner">
-          <span class="face front">
-            <span class="num">2</span>
-            <span class="card-title">Dormant customers</span>
-            <span class="card-sub">Due for service and not calling.</span>
-            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
-          </span>
-          <span class="face back" aria-hidden="true">
-            <span class="num">2</span>
-            <span class="card-title">Dormant customers</span>
-            <span class="card-body">Customers past their normal service interval, sorted by what they have spent and the age of their home. Win-back campaigns go to the ones most likely to book.</span>
-            <span class="card-foot">Select to close</span>
-          </span>
-        </span>
-      </button>
-
-      <button type="button" class="flip reveal" aria-pressed="false">
-        <span class="flip-inner">
-          <span class="face front">
-            <span class="num">3</span>
-            <span class="card-title">Maintenance plans</span>
-            <span class="card-sub">Good customers who are not on one.</span>
-            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
-          </span>
-          <span class="face back" aria-hidden="true">
-            <span class="num">3</span>
-            <span class="card-title">Maintenance plans</span>
-            <span class="card-body">Repeat customers without a plan, ranked by job history and property. Plan offers go to people who already trust you.</span>
-            <span class="card-foot">Select to close</span>
-          </span>
-        </span>
-      </button>
-
-      <button type="button" class="flip reveal" aria-pressed="false">
-        <span class="flip-inner">
-          <span class="face front">
-            <span class="num">4</span>
-            <span class="card-title">Marketing by source</span>
-            <span class="card-sub">Which spend books paid jobs.</span>
-            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
-          </span>
-          <span class="face back" aria-hidden="true">
-            <span class="num">4</span>
-            <span class="card-title">Marketing by source</span>
-            <span class="card-body">Every lead traced to where it came from and followed to a paid invoice. You see cost per booked job by channel, not calls or clicks.</span>
-            <span class="card-foot">Select to close</span>
-          </span>
-        </span>
-      </button>
-
-      <button type="button" class="flip reveal" aria-pressed="false">
-        <span class="flip-inner">
-          <span class="face front">
-            <span class="num">5</span>
-            <span class="card-title">Missed calls</span>
-            <span class="card-sub">What slow callbacks cost.</span>
-            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
-          </span>
-          <span class="face back" aria-hidden="true">
-            <span class="num">5</span>
-            <span class="card-title">Missed calls</span>
-            <span class="card-body">Missed and late-answered calls matched against the jobs that did or did not follow, so the cost shows up in dollars.</span>
-            <span class="card-foot">Select to close</span>
-          </span>
-        </span>
-      </button>
-
-      <button type="button" class="flip reveal" aria-pressed="false">
-        <span class="flip-inner">
-          <span class="face front">
-            <span class="num">6</span>
-            <span class="card-title">Reviews and seasonal</span>
-            <span class="card-sub">Timed to the job and the weather.</span>
-            <span class="card-foot">Details <span class="plus" aria-hidden="true">+</span></span>
-          </span>
-          <span class="face back" aria-hidden="true">
-            <span class="num">6</span>
-            <span class="card-title">Reviews and seasonal</span>
-            <span class="card-body">Review requests after completed jobs. Seasonal pushes triggered by freezes, hail, and heat, before the phones start ringing.</span>
-            <span class="card-foot">Select to close</span>
-          </span>
-        </span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="label">How it works</div>
-      <h2>Set up once. Run and measure every month.</h2>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <h3>Set up</h3>
-        <span class="when">2 to 3 weeks</span>
-        <p>Your systems connected into one clean database that you own. Duplicate customers merged, every job tied to an address, every lead tagged with its real source.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Analyze</h3>
-        <span class="when">Monthly</span>
-        <p>Estimates scored, dormant customers and plan candidates flagged, and every customer profiled by their home.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Run campaigns</h3>
-        <span class="when">Monthly</span>
-        <p>You approve each campaign. I build it, send it, and track it. Email and mail first; text messages only with customer consent.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Measure</h3>
-        <span class="when">Monthly report</span>
-        <p>A random slice of each list gets nothing. The difference between the two groups is what the campaign caused, reported on one page.</p>
-      </div>
-    </div>
-
-    <!-- Pricing sits under the steps it pays for: setup under step 1, the
-         monthly fee spanning the three steps that repeat. Saves a section. -->
-    <div class="pbar" id="pricing">
-      <div class="pbar-cell reveal">
-        <span class="what">Setup, one time</span>
-        <span class="fig">$2,500 - $3,500</span>
-        <span class="pnote">Depends on how many systems you run.</span>
-      </div>
-      <div class="pbar-cell main reveal">
-        <span class="what">Monthly</span>
-        <span class="fig">$1,500 - $2,500 <small>/ mo</small></span>
-        <span class="pnote">Analysis, campaigns, and the results report. Month to month after the first three months.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="diff" aria-label="What is different">
-  <div class="wrap">
-    <div class="tiles">
-      <div class="tile reveal">
-        <div class="icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-canvas">
+        <div class="shell hero-content">
+          <p class="eyebrow"><span class="location-dot" aria-hidden="true"></span> Customer data. Houston home services.</p>
+          <h1 id="hero-title"><em>More booked jobs.</em><br> From customers<br> you already know.</h1>
+          <p class="hero-copy">I find the follow-ups worth making in your customer history, run the campaigns you approve, and track the work they bring back.</p>
+          <a class="button" href="#contact">Let's look at your business</a>
+          <p class="hero-note">A 30-minute call with Anthony Johnson.<br>Data Specialist. Sugar Land, Texas.</p>
         </div>
-        <h3>Know the house, not just the name</h3>
-        <p>Every customer profiled by their home, so campaigns go to the homes that actually need the work.</p>
-      </div>
-      <div class="tile reveal">
-        <div class="icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+        <div class="neighborhood" aria-label="Explore three customer follow-up opportunities">
+          <img class="neighborhood-image" src="assets/houston-neighborhood.png" alt="An illustrated Houston neighborhood with homes, service equipment, mature trees, and a work van." width="1536" height="1024" fetchpriority="high">
+          <button class="home-pin pin-estimates is-active" type="button" data-opportunity="estimates" aria-pressed="true" aria-controls="scene-note opportunity-detail">
+            <span class="pin-label"><i aria-hidden="true"></i> Unsold estimate</span><span class="pin-stem" aria-hidden="true"></span>
+          </button>
+          <button class="home-pin pin-dormant" type="button" data-opportunity="dormant" aria-pressed="false" aria-controls="scene-note opportunity-detail">
+            <span class="pin-label"><i aria-hidden="true"></i> Overdue service</span><span class="pin-stem" aria-hidden="true"></span>
+          </button>
+          <button class="home-pin pin-plans" type="button" data-opportunity="plans" aria-pressed="false" aria-controls="scene-note opportunity-detail">
+            <span class="pin-label"><i aria-hidden="true"></i> Maintenance plan</span><span class="pin-stem" aria-hidden="true"></span>
+          </button>
+          <p class="scene-caption">Select a home. See the opportunity.</p>
+          <div class="scene-note" id="scene-note" role="region" aria-label="Selected opportunity" aria-live="polite" hidden>
+            <button class="scene-close" type="button" aria-label="Close opportunity preview">×</button>
+            <p id="scene-note-title">The estimate that went quiet</p>
+            <span id="scene-note-copy">Find the quotes worth following up, with the reason behind each score.</span>
+            <a href="#opportunities">See how I follow up <span aria-hidden="true">→</span></a>
+          </div>
         </div>
-        <h3>Results against a holdout</h3>
-        <p>Dashboards show activity. A holdout group shows what the campaign actually caused, separate from revenue you would have gotten anyway.</p>
       </div>
-      <div class="tile reveal">
-        <div class="icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+      <div class="systems-strip shell">
+        <p>Start with the systems<br> <strong>you already use.</strong></p>
+        <div class="system-names" aria-label="Supported source systems">
+          <span>Housecall Pro</span><span>Jobber</span><span>ServiceTitan</span><span>QuickBooks</span>
         </div>
-        <h3>Your data stays yours</h3>
-        <p>The database is set up in your name. If we stop working together, you keep it and everything in it.</p>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-copy reveal">
-      <div class="label">Contact</div>
-      <h2>A 30-minute call.</h2>
-      <p>Tell me what software you run and roughly how many past customers and open estimates you have. Usually I can tell you on that call where the money is.</p>
+    <section class="opportunities" id="opportunities" aria-labelledby="opportunities-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow">A closer look at your customer history</p>
+          <h2 id="opportunities-title">There's a reason<br>to get back in touch.</h2>
+          <p>An old estimate. A service interval. A home that needs a plan. The useful detail is already in your records.</p>
+        </div>
+        <div class="opportunity-workspace">
+          <div class="opportunity-tabs" role="tablist" aria-label="Customer opportunities">
+            <button id="tab-estimates" class="opportunity-tab is-active" role="tab" aria-selected="true" aria-controls="opportunity-detail" tabindex="0" data-opportunity="estimates">Unsold estimates</button>
+            <button id="tab-dormant" class="opportunity-tab" role="tab" aria-selected="false" aria-controls="opportunity-detail" tabindex="-1" data-opportunity="dormant">Dormant customers</button>
+            <button id="tab-plans" class="opportunity-tab" role="tab" aria-selected="false" aria-controls="opportunity-detail" tabindex="-1" data-opportunity="plans">Maintenance plans</button>
+          </div>
+          <div class="opportunity-detail" id="opportunity-detail" role="tabpanel" aria-labelledby="tab-estimates" tabindex="0">
+            <div class="opportunity-head">
+              <p class="detail-kicker" id="opportunity-kicker">The estimate that went quiet</p>
+              <h3 id="opportunity-title">A quote isn't always<br>the end of the conversation.</h3>
+              <p id="opportunity-summary">Some open estimates deserve a second look. I rank them by value and likelihood to close, with the reason behind each score.</p>
+            </div>
+            <div class="opportunity-action">
+              <p class="detail-kicker">What happens next</p>
+              <h4 id="opportunity-action-title">Follow up with the strongest prospects first.</h4>
+              <p id="opportunity-action-copy">You approve the campaign. I build it, send it, and track which follow-ups turn into paid work.</p>
+              <a href="#contact" class="text-link">Discuss your customer history <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+        <p class="example-note">These are examples of the work CTSG does. The right starting point depends on your records.</p>
+      </div>
+    </section>
 
-      <div class="person">
-        <!-- Pulled from the final frame of Newdigital.mp4 on anthonyjctsg.com.
-             Served larger than displayed so it holds up on a retina screen. -->
-        <img class="portrait" src="anthony.jpg" alt="Anthony Johnson" width="84" height="99" loading="lazy" decoding="async">
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="shell approach-layout">
+        <div class="approach-intro">
+          <p class="eyebrow">From records to repeat business</p>
+          <h2 id="approach-title">You run<br> the crews.<br> <span>I'll work<br> the history.</span></h2>
+          <p>I connect your field software and accounting, find the opportunities, and do the campaign work with you.</p>
+          <div class="ownership-note">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 13V7a9 9 0 0 1 18 0v6M5 13h22v17H5zM16 20v4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <div><strong>The database belongs to you.</strong><p>It is set up in your name. If we stop working together, you keep it and everything in it.</p></div>
+          </div>
+        </div>
+        <div class="working-rhythm">
+          <article class="rhythm-step">
+            <div class="step-label"><span>First, connect the history</span><span>2 to 3 weeks</span></div>
+            <h3>One customer.<br>The whole picture.</h3>
+            <p>Merge duplicate customers, tie jobs to addresses, and connect each lead to its source. Your field software and QuickBooks feed one database.</p>
+          </article>
+          <article class="rhythm-step">
+            <div class="step-label"><span>Then, find the next move</span><span>Every month</span></div>
+            <h3>Know who to contact<br>and why.</h3>
+            <p>I score estimates, identify overdue customers and plan candidates, and use the home's details to make each list more relevant.</p>
+          </article>
+          <article class="rhythm-step">
+            <div class="step-label"><span>Put the list to work</span><span>You approve it</span></div>
+            <h3>The campaign gets done.</h3>
+            <p>I build, send, and track email and mail campaigns. Text messages are used only with customer consent.</p>
+          </article>
+          <article class="rhythm-step">
+            <div class="step-label"><span>Check what came back</span><span>Monthly report</span></div>
+            <h3>Measure the extra work.</h3>
+            <p>A random group receives no campaign. Comparing it with the contacted group helps estimate the work the campaign added.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wider-work" aria-labelledby="wider-work-title">
+      <div class="shell wider-layout">
         <div>
-          <h3>Anthony Johnson</h3>
-          <div class="role">Data engineer, Sugar Land</div>
-          <p>7+ years of data engineering, reporting, and analytics on regulated, multi-system data. You work with me directly. No account managers, no subcontractors.</p>
+          <p class="eyebrow">The rest of the picture</p>
+          <h2 id="wider-work-title">Follow the lead.<br>Find the loose ends.</h2>
+        </div>
+        <div class="service-rows">
+          <details>
+            <summary><span>Which marketing books paid jobs?</span><span class="disclosure-mark" aria-hidden="true">+</span></summary>
+            <p>I trace leads from their source to a paid invoice, so you can see cost per booked job and decide where the next marketing dollar goes.</p>
+          </details>
+          <details>
+            <summary><span>What are missed calls costing you?</span><span class="disclosure-mark" aria-hidden="true">+</span></summary>
+            <p>I connect missed and late-answered calls to the jobs that did or did not follow, so the cost shows up in dollars.</p>
+          </details>
+          <details>
+            <summary><span>Who should hear from you this season?</span><span class="disclosure-mark" aria-hidden="true">+</span></summary>
+            <p>I send review requests after completed jobs and plan seasonal campaigns around Houston's freezes, hail, and heat.</p>
+          </details>
         </div>
       </div>
-      <p class="meta">Replies within one business day.</p>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="shell">
+        <div class="pricing-top">
+          <div><p class="eyebrow">The cost of working together</p><h2 id="pricing-title">Clear scope.<br>Clear numbers.</h2></div>
+          <p>For home-service companies in Harris and Fort Bend counties doing <strong>$1M to $10M a year</strong>, with customer history to work from.</p>
+        </div>
+        <div class="pricing-ledger">
+          <article class="price-item">
+            <div class="price-heading"><h3>Get connected.</h3><span>One-time setup</span></div>
+            <p class="price">$2,500<span> to </span>$3,500</p>
+            <p>System connections, clean records, and your own database. The exact fee depends on how many systems you run.</p>
+          </article>
+          <article class="price-item">
+            <div class="price-heading"><h3>Keep it working.</h3><span>Monthly</span></div>
+            <p class="price">$1,500<span> to </span>$2,500</p>
+            <p>Analysis, approved campaigns, and the results report. Month to month after the first three months.</p>
+          </article>
+        </div>
+        <div class="trade-footer"><p>Built for the work you do.</p><p>HVAC · Plumbing · Electrical · Roofing · Pest control · Pool · Landscaping</p></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-layout">
+        <div class="contact-intro">
+          <p class="eyebrow">Sugar Land, Texas</p>
+          <h2 id="contact-title">Let's see what's<br>in your history.</h2>
+          <p class="contact-lead">Tell me what software you run and roughly how many past customers and open estimates you have. We'll start with a 30-minute call.</p>
+          <div class="anthony">
+            <img src="https://ctsg-htx.com/anthony.jpg" alt="Anthony Johnson" width="112" height="128" loading="lazy">
+            <div><h3>Anthony Johnson</h3><p class="anthony-intro">You work with me.</p><p>Five years in data engineering, reporting, and analytics. I do the analysis, build the campaigns, and explain the report.</p><strong>No account managers. No subcontractors.</strong></div>
+          </div>
+        </div>
+        <div class="contact-form-area">
+        <form id="inquiry-form" class="inquiry-form" data-source="ctsg-htx-cta" novalidate>
+          <h3>Request a call.</h3>
+          <p class="form-intro">I'll reply within one business day.</p>
+          <div class="form-row">
+            <div class="field"><label for="inquiry-name">Your name</label><input id="inquiry-name" type="text" autocomplete="name" maxlength="120" required></div>
+            <div class="field"><label for="inquiry-company">Company <span>Optional</span></label><input id="inquiry-company" type="text" autocomplete="organization" maxlength="160"></div>
+          </div>
+          <div class="field"><label for="inquiry-email">Work email</label><input id="inquiry-email" type="email" autocomplete="email" inputmode="email" maxlength="254" required></div>
+          <div class="field"><label for="inquiry-message">What are you working with? <span>Optional</span></label><textarea id="inquiry-message" maxlength="4000" rows="4" placeholder="Your software, past customers, and open estimates"></textarea></div>
+          <div class="visually-hidden" aria-hidden="true"><label for="inquiry-website">Leave this field empty</label><input id="inquiry-website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button type="submit" class="button form-button">Request a 30-minute call</button>
+        </form>
+        <p id="inquiry-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <a href="#top" class="footer-brand" aria-label="CTSG home"><img src="https://ctsg-htx.com/ctsg-logo-sm.png" alt="" width="144" height="114"><span>Calamity Technology<br>Solutions Group</span></a>
+      <p>Serving Houston, Sugar Land, Katy, Missouri City, Richmond, Rosenberg, Fulshear, Stafford, Cypress, Spring, Humble, Pasadena, and the rest of Harris and Fort Bend counties.</p>
+      <a href="#top" class="back-top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
-
-    <div class="reveal">
-      <form class="cta-form" id="inquiry-form" data-source="ctsg-htx-cta" novalidate>
-        <div class="row">
-          <div>
-            <label class="visually-hidden" for="inquiry-name">Name</label>
-            <input id="inquiry-name" type="text" autocomplete="name" maxlength="120" placeholder="Name" required>
-          </div>
-          <div>
-            <label class="visually-hidden" for="inquiry-company">Company</label>
-            <input id="inquiry-company" type="text" autocomplete="organization" maxlength="160" placeholder="Company (optional)">
-          </div>
-        </div>
-        <div class="row" style="grid-template-columns:1fr">
-          <div>
-            <label class="visually-hidden" for="inquiry-email">Email</label>
-            <input id="inquiry-email" type="email" autocomplete="email" maxlength="254" placeholder="you@company.com" required>
-          </div>
-        </div>
-        <label class="visually-hidden" for="inquiry-message">What software you run</label>
-        <textarea id="inquiry-message" maxlength="4000" placeholder="What software you run, and anything else useful. Optional."></textarea>
-
-        <!-- Honeypot: invisible to people, irresistible to bots. A filled
-             value means the submission is scripted, so it is dropped. -->
-        <div class="visually-hidden" aria-hidden="true">
-          <label for="inquiry-website">Leave this field empty</label>
-          <input id="inquiry-website" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <button type="submit" class="btn">Send</button>
-      </form>
-      <!-- Outside the form on purpose: the form is hidden on success, and the
-           confirmation has to outlive it. -->
-      <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    <!-- Plain-text service area: the city names are what local searches
-         match on, and they read naturally here. -->
-    <p class="serving">Serving home service companies in Houston, Sugar Land, Katy, Missouri City, Richmond, Rosenberg, Fulshear, Stafford, Cypress, Spring, Humble, Pasadena, and the rest of Harris and Fort Bend counties.</p>
-  </div>
-  <div class="wrap foot">
-    <div>&copy; <span id="y">2026</span> Calamity Technology Solutions Group, LLC. Sugar Land, Texas.</div>
-    <div><a href="#services">Services</a> &nbsp; <a href="#pricing">Pricing</a> &nbsp; <a href="#contact">Contact</a></div>
-  </div>
-</footer>
-
-<script>
-(function () {
-    'use strict';
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    /* Flip cards. aria-pressed drives the CSS, and aria-hidden follows the
-     * visible face so a screen reader reads only what is showing. */
-    document.querySelectorAll('.flip').forEach(function (card) {
-        var front = card.querySelector('.front');
-        var back = card.querySelector('.back');
-        card.addEventListener('click', function () {
-            var on = card.getAttribute('aria-pressed') !== 'true';
-            card.setAttribute('aria-pressed', on ? 'true' : 'false');
-            front.setAttribute('aria-hidden', on ? 'true' : 'false');
-            back.setAttribute('aria-hidden', on ? 'false' : 'true');
-        });
-    });
-
-    /* Reveal on scroll, staggered within each group. Anything the observer
-     * cannot handle is shown immediately rather than left invisible. */
-    var items = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) {
-        items.forEach(function (el) { el.classList.add('in'); });
-        return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (!entry.isIntersecting) { return; }
-            var el = entry.target;
-            var siblings = Array.prototype.filter.call(el.parentNode.children, function (c) {
-                return c.classList.contains('reveal');
-            });
-            el.style.transitionDelay = (Math.max(0, siblings.indexOf(el)) * 70) + 'ms';
-            el.classList.add('in');
-            io.unobserve(el);
-            /* Once it has arrived, hand the element back its own transitions -
-             * otherwise the card hover would inherit the slow, delayed reveal. */
-            el.addEventListener('transitionend', function done(e) {
-                if (e.target !== el) { return; }
-                el.removeEventListener('transitionend', done);
-                el.style.transitionDelay = '';
-                el.classList.remove('reveal', 'in');
-            });
-        });
-    }, { rootMargin: '0px 0px -8% 0px' });
-    items.forEach(function (el) { io.observe(el); });
-}());
-</script>
-<script src="ctsg-data.js"></script>
-<script src="contact.js"></script>
+    <div class="shell footer-bottom"><p>© <span id="year">2026</span> Calamity Technology Solutions Group, LLC</p><p>Sugar Land, Texas</p></div>
+  </footer>
+  <script src="https://ctsg-htx.com/ctsg-data.js" defer></script>
+  <script src="https://ctsg-htx.com/contact.js" defer></script>
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>
