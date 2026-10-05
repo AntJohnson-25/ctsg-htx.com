@@ -135,10 +135,9 @@
                 status.className = 'form-status is-ok';
             }).catch(function () {
                 submit.disabled = false;
-                /* No fallback address to offer: the branded mailbox does not
-                 * exist yet, and sending someone to a bouncing inbox is worse
-                 * than asking them to retry. */
-                fail('Something went wrong sending that. Please try again in a moment.');
+                /* Same address the contact section shows. Swap both when the
+                 * branded mailbox exists. */
+                fail('Something went wrong sending that. Please try again, or email charles2025business@gmail.com.');
             });
         });
     }());

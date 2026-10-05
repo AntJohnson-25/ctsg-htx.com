@@ -56,6 +56,7 @@ p{max-width:65ch}
 .hero-content .button{max-width:none}
 .hero-note{margin-top:15px;font-size:11px;line-height:1.5;color:var(--muted)}
 .neighborhood{position:absolute;top:var(--scene-top);right:0;width:70%;max-width:calc((var(--hero-height) - var(--scene-top)) * 1.5);aspect-ratio:3/2;z-index:1}
+.neighborhood picture{display:contents}
 .neighborhood-image{width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;mask-image:linear-gradient(to bottom,transparent,#000 5%,#000 91%,transparent),linear-gradient(to right,transparent,#000 20%);mask-composite:intersect}
 .home-pin{position:absolute;display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-100%);padding:0;background:none;border:0;color:var(--ink);z-index:2}
 .pin-estimates{left:36%;top:63%}
@@ -124,6 +125,7 @@ p{max-width:65ch}
 .wider-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:12%;align-items:start}
 .wider-layout .eyebrow{margin-bottom:23px;color:var(--blue)}
 .wider-layout h2{font-size:39px}
+.wider-note{margin-top:18px;max-width:300px;font-size:13px;line-height:1.65;color:var(--muted)}
 .service-rows{border-top:1px solid var(--line)}
 .service-rows details{border-bottom:1px solid var(--line)}
 .service-rows summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;list-style:none;font-size:15px;font-weight:600;cursor:pointer}
@@ -152,6 +154,23 @@ p{max-width:65ch}
 .contact-intro>.eyebrow{margin-bottom:23px;color:var(--blue)}
 .contact-intro h2{font-size:clamp(40px,4.1vw,61px)}
 .contact-lead{margin-top:25px;max-width:410px;font-size:15px;line-height:1.75;color:var(--muted)}
+.contact-email{margin-top:14px;font-size:14px;color:var(--muted)}
+.contact-email a{color:var(--blue);font-weight:600;overflow-wrap:anywhere}
+.footer-bottom a{color:inherit}
+.legal-back{font-size:13px;font-weight:600;color:var(--blue);text-decoration:none}
+.legal-back:hover{text-decoration:underline}
+.legal{padding:64px 0 90px;background:#fff}
+.legal-body{max-width:720px}
+.legal h1{font-size:clamp(36px,5vw,56px);margin:14px 0 22px}
+.legal h2{font-size:clamp(24px,2.6vw,30px);margin:46px 0 14px}
+.legal p,.legal li{max-width:none;font-size:15px;line-height:1.75;color:var(--muted)}
+.legal p+p{margin-top:12px}
+.legal .legal-lead{font-size:17px;color:var(--ink)}
+.legal ul{margin:16px 0 0;padding-left:20px}
+.legal li+li{margin-top:10px}
+.legal strong{color:var(--ink)}
+.legal a{color:var(--blue);overflow-wrap:anywhere}
+.legal~.site-footer .footer-bottom{margin-top:0;border-top:0;padding-top:0}
 .anthony{display:flex;align-items:flex-start;gap:24px;margin-top:46px}
 .anthony img{width:100px;height:124px;object-fit:cover;object-position:center 22%;border-radius:5px}
 .anthony h3{font-size:clamp(24px,2.2vw,30px);font-weight:700;color:var(--blue);margin:0 0 6px}
@@ -278,7 +297,7 @@ p{max-width:65ch}
 .systems-strip{display:block;padding:19px 0 24px;min-height:0}
 .systems-strip>p{font-size:10px;margin-bottom:19px}
 .systems-strip>p br{display:none}
-.system-names{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.system-names{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
 .system-names span{font-size:12px;white-space:nowrap;text-align:center}
 .system-names span:first-child{text-align:left}
 .system-names span:last-child{text-align:right}
@@ -321,6 +340,7 @@ h2{font-size:39px}
 .wider-layout{display:block}
 .wider-layout .eyebrow{font-size:10px;margin-bottom:20px}
 .wider-layout h2{font-size:36px}
+.wider-note{margin:14px 0 24px}
 .service-rows{margin-top:28px}
 .service-rows summary{font-size:13px;padding:22px 0}
 .service-rows details p{font-size:13px}
