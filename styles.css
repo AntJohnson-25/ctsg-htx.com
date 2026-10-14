@@ -379,4 +379,29 @@ h2{font-size:39px}
 .back-top{margin-top:22px;font-size:11px}
 .footer-bottom{font-size:8px;margin-top:25px}
 }
+/* Fall theme, Oct 1 to Nov 30: the inline script in each page's <head> adds html.fall by date
+   (?season=fall or ?season=off previews it any day); out of season none of this matches. Leaves come
+   from fall.js. Rust accents keep white text and the eyebrows on cream above 4.5:1. */
+html.fall{--paper:#f6f0e7;--line:#e4d6c3;--muted:#62584f;--blue:#a8471a;--deep-blue:#87380f}
+html.fall .location-dot{width:12px;height:12px;border-radius:0;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1l1.6 4.4 2.5-1.2-.5 4.9 3.8-2.6.1 3.1 3.5.6-2.6 3.1 1.3 1.9-4.8.2.4 2.4-4.2-1.9-.5 3.6h-1.2l-.5-3.6-4.2 1.9.4-2.4-4.8-.2 1.3-1.9L1 10.2l3.5-.6.1-3.1 3.8 2.6-.5-4.9 2.5 1.2z'/%3E%3Cpath d='M11.4 18h1.2v5h-1.2z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1l1.6 4.4 2.5-1.2-.5 4.9 3.8-2.6.1 3.1 3.5.6-2.6 3.1 1.3 1.9-4.8.2.4 2.4-4.2-1.9-.5 3.6h-1.2l-.5-3.6-4.2 1.9.4-2.4-4.8-.2 1.3-1.9L1 10.2l3.5-.6.1-3.1 3.8 2.6-.5-4.9 2.5 1.2z'/%3E%3Cpath d='M11.4 18h1.2v5h-1.2z'/%3E%3C/svg%3E") center/contain no-repeat}
+html.fall .brand::after{content:"";width:36px;height:36px;flex-shrink:0;transform:rotate(-8deg);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='7.6' cy='14.6' rx='5.6' ry='7.4' fill='%23b4532a'/%3E%3Cellipse cx='16.4' cy='14.6' rx='5.6' ry='7.4' fill='%23b4532a'/%3E%3Cellipse cx='12' cy='14.6' rx='5' ry='7.9' fill='%23e07a2a'/%3E%3Cpath d='M12 7.2c-.1-2 .4-3.6 1.8-4.8' stroke='%234d6b2a' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M13.4 5.6c.9-2.3 3.4-3.2 5.8-2.4-.8 2.3-3.3 3.3-5.8 2.4z' fill='%236f8f35'/%3E%3Cpath d='M6.6 13.2 8.6 10l1.8 3.2zM13.6 13.2 15.4 10l2 3.2zM11 15.6l1-1.6 1 1.6zM5.8 16.4l1.8.8 1-.8 1.2 1.2 1.2-.8 1 1.2 1-1.2 1.2.8 1.2-1.2 1 .8 1.8-.8c-.8 3.2-3.4 4.6-6.2 4.6s-5.4-1.4-6.2-4.6z' fill='%23ffd75a' stroke='%237a2e0e' stroke-width='.5' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+html.fall #main-nav .nav-cta{border-color:#cdb59a}
+html.fall #main-nav .nav-cta:hover{border-color:var(--blue)}
+html.fall .pin-label{border-color:#e0cdb6;box-shadow:0 5px 18px #45301c22}
+html.fall .pin-label i{background:#d9b48a}
+html.fall .pin-stem{background:#8c7462}
+html.fall .system-names span{color:#4d3f35}
+html.fall .opportunity-tabs{background:#faf5ee}
+html.fall .approach{background:var(--deep-blue)}
+html.fall .approach-intro .eyebrow,html.fall .step-label,html.fall .ownership-note p{color:#ffe2c8}
+html.fall .approach-intro h2>span{color:#ffc999}
+html.fall .approach-intro>p:last-of-type,html.fall .rhythm-step p{color:#fff0e2}
+html.fall .pricing{background:#f1e3d1}
+html.fall .pricing-ledger,html.fall .price-item+article{border-color:#d8c0a2}
+html.fall .contact{background:#fbf7f1}
+html.fall .field input,html.fall .field textarea{border-color:#d4bfa5;background:#fffdf9}
+html.fall .field textarea::placeholder{color:#857567}
+html.fall .site-footer{background:#2b1f18;color:#ecdccb}
+html.fall .footer-main>p{color:#c9b4a0}
+html.fall .footer-bottom{color:#bfa792}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
