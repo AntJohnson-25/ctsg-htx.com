@@ -105,5 +105,21 @@
     }
   });
   window.addEventListener('resize', () => { if (window.innerWidth > 640) closeMenu(); });
+  // Phone-only call button (CSS shows it at 640px and under): appears once the hero
+  // button has scrolled away and leaves again when the contact section arrives.
+  const sticky = document.querySelector('.sticky-cta');
+  const contact = document.getElementById('contact');
+  const heroButton = document.querySelector('.hero-content .button');
+  if (sticky && contact && heroButton) {
+    const placeSticky = () => {
+      const pastHero = heroButton.getBoundingClientRect().bottom < 0;
+      const atContact = contact.getBoundingClientRect().top < window.innerHeight - 80;
+      sticky.hidden = !pastHero || atContact || nav.classList.contains('is-open');
+    };
+    window.addEventListener('scroll', placeSticky, {passive: true});
+    window.addEventListener('resize', placeSticky);
+    menu.addEventListener('click', placeSticky);
+    placeSticky();
+  }
   document.getElementById('year').textContent = String(new Date().getFullYear());
 })();

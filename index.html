@@ -33,7 +33,7 @@
   <link rel="apple-touch-icon" href="https://ctsg-htx.com/apple-touch-icon.png">
   <!-- Fall theme, Oct 1 to Nov 30 (styles.css + fall.js). ?season=fall or ?season=off previews it on any day. -->
   <script>(function () { var q = /[?&]season=(fall|off)/.exec(location.search), m = new Date().getMonth(); if (q ? q[1] === 'fall' : m === 9 || m === 10) { document.documentElement.classList.add('fall'); } }());</script>
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
   <link rel="preload" as="image" type="image/webp" href="assets/houston-neighborhood.webp" imagesrcset="assets/houston-neighborhood-900.webp 900w, assets/houston-neighborhood.webp 1536w" imagesizes="(max-width: 640px) 117vw, 70vw">
   <script type="application/ld+json">
   {
@@ -176,8 +176,8 @@
           <p class="eyebrow"><span class="location-dot" aria-hidden="true"></span> Customer data. Houston home services.</p>
           <h1 id="hero-title"><em>More booked jobs.</em><br> From customers<br> you already know.</h1>
           <p class="hero-copy">I find the follow-ups worth making in your customer history, run the campaigns you approve, and track the work they bring back.</p>
-          <a class="button" href="#contact">Let's look at your business</a>
-          <p class="hero-note">A 30-minute call with Anthony Johnson.<br>Data Specialist. Sugar Land, Texas.</p>
+          <a class="button" href="#contact">Request a 30-minute call</a>
+          <p class="hero-note">With Anthony Johnson.<br>Data Specialist. Sugar Land, Texas.</p>
         </div>
         <div class="neighborhood" aria-label="Explore three customer follow-up opportunities">
           <picture>
@@ -233,7 +233,7 @@
               <p class="detail-kicker">What happens next</p>
               <h4 id="opportunity-action-title">Follow up with the strongest prospects first.</h4>
               <p id="opportunity-action-copy">You approve the campaign. I build it, send it, and track which follow-ups turn into paid work.</p>
-              <a href="#contact" class="text-link">Discuss your customer history <span aria-hidden="true">→</span></a>
+              <a href="#contact" class="text-link">Request a 30-minute call <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
@@ -320,6 +320,7 @@
           </article>
         </div>
         <div class="trade-footer"><p>Built for the work you do.</p><p>HVAC · Plumbing · Electrical · Roofing · Pest control · Pool · Landscaping</p></div>
+        <div class="pricing-cta"><a class="button" href="#contact">Request a 30-minute call</a><p>I'll reply within one business day.</p></div>
       </div>
     </section>
 
@@ -392,12 +393,15 @@
           <div class="field"><label for="inquiry-message">What are you working with? <span>Optional</span></label><textarea id="inquiry-message" maxlength="4000" rows="4" placeholder="Your software, past customers, and open estimates"></textarea></div>
           <div class="visually-hidden" aria-hidden="true"><label for="inquiry-website">Leave this field empty</label><input id="inquiry-website" type="text" tabindex="-1" autocomplete="off"></div>
           <button type="submit" class="button form-button">Request a 30-minute call</button>
+          <p class="form-privacy">Used only to reply to you. Not sold, not shared, no mailing list. <a href="privacy.html">Privacy and data handling</a></p>
         </form>
         <p id="inquiry-status" class="form-status" role="status" aria-live="polite"></p>
         </div>
       </div>
     </section>
   </main>
+
+  <a class="sticky-cta" href="#contact" hidden>Request a 30-minute call <span aria-hidden="true">→</span></a>
 
   <footer class="site-footer">
     <div class="shell footer-main">
@@ -409,7 +413,7 @@
   </footer>
   <script src="https://ctsg-htx.com/ctsg-data.js" defer></script>
   <script src="https://ctsg-htx.com/contact.js" defer></script>
-  <script src="script.js?v=3" defer></script>
+  <script src="script.js?v=4" defer></script>
   <script src="fall.js?v=2" defer></script>
 </body>
 </html>
