@@ -55,6 +55,11 @@
     document.getElementById('opportunity-action-title').textContent = story.actionTitle;
     document.getElementById('opportunity-action-copy').textContent = story.actionCopy;
     panel.setAttribute('aria-labelledby', 'tab-' + key);
+    // Per-story accent colour, and a short re-entry animation on the new copy.
+    panel.closest('.opportunity-workspace').dataset.active = key;
+    panel.classList.remove('swap');
+    void panel.offsetWidth;
+    panel.classList.add('swap');
     if (fromPin) {
       document.getElementById('scene-note-title').textContent = story.kicker;
       document.getElementById('scene-note-copy').textContent = story.preview;
@@ -120,6 +125,62 @@
     window.addEventListener('resize', placeSticky);
     menu.addEventListener('click', placeSticky);
     placeSticky();
+  }
+  // Colour + motion layer: scroll progress bar, header shadow, current-section nav link, and
+  // fade-up reveals for things below the fold. All purely visual; skipped for reduced motion.
+  const header = document.querySelector('.site-header');
+  const bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.setAttribute('aria-hidden', 'true');
+  document.body.prepend(bar);
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, window.scrollY / max) : 0) + ')';
+      header.classList.toggle('is-stuck', window.scrollY > 8);
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive: true});
+  onScroll();
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window) {
+    const navLinks = [...nav.querySelectorAll('a[href^="#"]:not(.nav-cta)')];
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(link => link.classList.toggle('is-current', link.getAttribute('href') === '#' + entry.target.id));
+      });
+    }, {rootMargin: '-35% 0px -55% 0px'});
+    navLinks.forEach(link => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) spy.observe(target);
+    });
+    if (!reduceMotion) {
+      const groups = [
+        '.section-intro', '.opportunity-workspace', '.example-note', '.approach-intro', '.rhythm-step',
+        '.wider-layout>div', '.service-rows details', '.pricing-top', '.ledger-label', '.price-item',
+        '.trade-footer', '.pricing-cta', '.contact-intro', '.inquiry-form'
+      ];
+      const reveal = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-in');
+          reveal.unobserve(entry.target);
+        });
+      }, {rootMargin: '0px 0px -8% 0px', threshold: 0.08});
+      groups.forEach(selector => {
+        document.querySelectorAll(selector).forEach((el, index) => {
+          if (el.getBoundingClientRect().top < window.innerHeight) return;
+          el.style.setProperty('--d', Math.min(index, 4) * 0.08 + 's');
+          el.classList.add('reveal');
+          reveal.observe(el);
+        });
+      });
+    }
   }
   document.getElementById('year').textContent = String(new Date().getFullYear());
 })();

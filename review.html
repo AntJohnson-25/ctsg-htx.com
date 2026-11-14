@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leave a Review | CTSG</title>
+  <meta name="description" content="Share your experience working with Calamity Technology Solutions Group.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://ctsg-htx.com/review.html">
+  <meta name="theme-color" content="#eef4f8">
+  <link rel="icon" href="https://ctsg-htx.com/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://ctsg-htx.com/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="https://ctsg-htx.com/apple-touch-icon.png">
+  <!-- Fall theme, Oct 1 to Nov 30 (styles.css). ?season=fall or ?season=off previews it on any day. -->
+  <script>(function () { var q = /[?&]season=(fall|off)/.exec(location.search), m = new Date().getMonth(); if (q ? q[1] === 'fall' : m === 9 || m === 10) { document.documentElement.classList.add('fall'); } }());</script>
+  <link rel="stylesheet" href="styles.css?v=27">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="CTSG home">
+        <img src="https://ctsg-htx.com/ctsg-seal.png" alt="" width="144" height="144">
+        <span>Calamity Technology<br>Solutions Group</span>
+      </a>
+      <a class="legal-back" href="index.html">Back to the main page</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact review-page" aria-labelledby="review-title">
+      <div class="shell contact-layout">
+        <div class="contact-intro">
+          <p class="eyebrow">Your experience</p>
+          <h1 id="review-title" class="review-heading">How did<br>we do?</h1>
+          <p class="contact-lead">A few honest sentences are plenty. I read every review myself, and it appears on the site once I have approved it.</p>
+          <p class="contact-email">Your email is used only to confirm the review is real. It is never shown. <a href="privacy.html">Privacy and data handling</a></p>
+        </div>
+        <div>
+          <form class="inquiry-form" id="review-form" novalidate>
+            <h2 class="form-heading">Leave a review.</h2>
+            <p class="form-intro">Takes about two minutes.</p>
+            <fieldset class="rating-field">
+              <legend>Your rating</legend>
+              <div class="star-input">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5"><span aria-hidden="true">&#9733;</span><span class="visually-hidden">5 stars</span></label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4"><span aria-hidden="true">&#9733;</span><span class="visually-hidden">4 stars</span></label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3"><span aria-hidden="true">&#9733;</span><span class="visually-hidden">3 stars</span></label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2"><span aria-hidden="true">&#9733;</span><span class="visually-hidden">2 stars</span></label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1"><span aria-hidden="true">&#9733;</span><span class="visually-hidden">1 star</span></label>
+              </div>
+            </fieldset>
+            <div class="field"><label for="review-quote">Your review</label><textarea id="review-quote" maxlength="1500" rows="6" placeholder="What did we work on, and how did it go?"></textarea></div>
+            <div class="form-row">
+              <div class="field"><label for="review-name">Your name <span>As it should appear</span></label><input id="review-name" type="text" autocomplete="name" maxlength="120"></div>
+              <div class="field"><label for="review-business">Business <span>Optional</span></label><input id="review-business" type="text" autocomplete="organization" maxlength="160"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="review-city">City <span>Optional</span></label><input id="review-city" type="text" maxlength="80"></div>
+              <div class="field"><label for="review-email">Email <span>Never shown</span></label><input id="review-email" type="email" autocomplete="email" inputmode="email" maxlength="254"></div>
+            </div>
+            <div class="visually-hidden" aria-hidden="true"><label for="review-website">Leave this field empty</label><input id="review-website" type="text" tabindex="-1" autocomplete="off"></div>
+            <label class="consent"><input type="checkbox" id="review-consent"><span>I am happy for CTSG to publish this review with the name, business and city I entered above.</span></label>
+            <button type="submit" class="button form-button">Send my review</button>
+            <p class="form-privacy">Your email stays private. Not sold, not shared, no mailing list. <a href="privacy.html">Privacy and data handling</a></p>
+          </form>
+          <p id="review-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-bottom"><p>&copy; 2026 Calamity Technology Solutions Group, LLC</p><p><a href="privacy.html">Privacy and data handling</a></p><p>Sugar Land, Texas</p></div>
+  </footer>
+  <script src="reviews.js?v=2" defer></script>
+  <script src="fall.js?v=2" defer></script>
+</body>
+</html>
